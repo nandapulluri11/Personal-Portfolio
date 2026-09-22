@@ -1,0 +1,2296 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nanda Kishore | Software Development &amp; AI Portfolio</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Personal portfolio of Nanda Kishore, B.Tech 2nd-year student developing practical skills in software engineering, full-stack web development, and AI through hands-on projects." />
+    <meta name="keywords" content="Nanda Kishore, Portfolio, B.Tech Student, Software Engineer, Full Stack Developer, AI, Python, React, Web Development, DSA" />
+    <meta name="author" content="Nanda Kishore" />
+    <link rel="canonical" href="https://nandakishore.dev/" />
+    
+    <!-- Open Graph Social Share Tags -->
+    <meta property="og:title" content="Nanda Kishore | Software Development &amp; AI Portfolio" />
+    <meta property="og:description" content="Explore projects, skills, certifications, and development journey of Nanda Kishore." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://nandakishore.dev/" />
+    <meta property="og:image" content="/assets/images/profile-placeholder.svg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Nanda Kishore | Portfolio" />
+    <meta name="twitter:description" content="B.Tech 2nd-year student building practical applications in Software &amp; AI." />
+
+    <!-- JSON-LD Structured Data for Person & Portfolio -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Nanda Kishore",
+      "jobTitle": "Student Software Developer",
+      "description": "B.Tech 2nd-year student focusing on software development, web engineering, and AI integration.",
+      "url": "https://nandakishore.dev/",
+      "sameAs": [
+        "https://github.com/nandapulluri11",
+        "https://www.linkedin.com/in/nandapulluri11/"
+      ],
+      "knowsAbout": [
+        "JavaScript", "Python", "React", "Node.js", "Express.js",
+        "Data Structures & Algorithms", "Full Stack Web Development", "Generative AI", "MongoDB", "SQL"
+      ]
+    }
+    </script>
+
+    <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+
+  <body>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress-container">
+      <div class="scroll-progress-bar" id="scrollProgressBar"></div>
+    </div>
+
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="visually-hidden-focusable p-3 bg-primary text-white position-absolute start-0 top-0 z-3">
+      Skip to main content
+    </a>
+
+    <!-- =========================================================================
+         1. NAVBAR
+         ========================================================================= -->
+    <header>
+      <nav class="navbar navbar-expand-lg fixed-top navbar-custom" id="mainNavbar" aria-label="Main Navigation">
+        <div class="container">
+          <a class="navbar-brand brand-badge" href="#hero">
+            <span class="brand-icon">NK</span>
+            <span>Nanda Kishore</span>
+          </a>
+
+          <div class="d-flex align-items-center gap-2 order-lg-3">
+            <!-- Theme Toggle -->
+            <button class="btn-theme-toggle" id="themeToggleBtn" type="button" aria-label="Toggle dark/light theme" title="Toggle theme">
+              <i class="bi bi-moon-stars-fill" id="themeToggleIcon"></i>
+            </button>
+
+            <!-- Mobile Hamburger Toggler -->
+            <button class="navbar-toggler navbar-toggler-custom d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="bi bi-list fs-4"></i>
+            </button>
+          </div>
+
+          <!-- Navigation Links -->
+          <div class="collapse navbar-collapse order-lg-2" id="navbarNav">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+              <li class="nav-item">
+                <a class="nav-link nav-link-custom active" href="#hero">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link-custom" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link-custom" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link-custom" href="#education">Education</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link-custom" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link-custom" href="#certifications">Certifications</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link-custom" href="#achievements">Achievements</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link nav-link-custom dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Explore
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end shadow-sm border-1">
+                  <li><a class="dropdown-item py-2" href="#experience"><i class="bi bi-briefcase me-2 text-primary"></i> Practical Experience</a></li>
+                  <li><a class="dropdown-item py-2" href="#hackathons"><i class="bi bi-lightning-charge me-2 text-primary"></i> Hackathon Highlights</a></li>
+                  <li><a class="dropdown-item py-2" href="#coding-profiles"><i class="bi bi-github me-2 text-primary"></i> GitHub &amp; Open Source</a></li>
+                  <li><a class="dropdown-item py-2" href="#journey"><i class="bi bi-map me-2 text-primary"></i> Learning Roadmap</a></li>
+                  <li><a class="dropdown-item py-2" href="#building"><i class="bi bi-hammer me-2 text-primary"></i> Currently Building</a></li>
+                  <li><a class="dropdown-item py-2" href="#blog"><i class="bi bi-journal-text me-2 text-primary"></i> Technical Writing</a></li>
+                </ul>
+              </li>
+              <li class="nav-item ms-lg-1">
+                <a class="nav-link nav-link-custom" href="#contact">Contact</a>
+              </li>
+              <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+                <button class="btn btn-outline-custom btn-sm px-3 py-1.5" data-bs-toggle="modal" data-bs-target="#resumeModal" type="button" aria-label="View or download resume">
+                  <i class="bi bi-file-earmark-person me-1"></i> Resume
+                </button>
+              </li>
+              <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+                <button class="btn btn-outline-primary-custom btn-sm d-flex align-items-center gap-1.5 px-3 py-1.5" id="openChatNavbarBtn" type="button" aria-label="Open AI Assistant">
+                  <i class="bi bi-robot text-primary"></i>
+                  <span>AI Assistant</span>
+                  <span class="badge bg-primary-subtle text-primary rounded-pill px-1.5 py-0.5" style="font-size: 0.65rem;">Gemini</span>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <!-- =========================================================================
+           2. HERO SECTION
+           ========================================================================= -->
+      <section class="hero-section" id="hero">
+        <div class="container">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-lg-10 col-xl-9 text-center">
+              <div class="hero-pill mb-3">
+                <span class="pulse-indicator"></span>
+                <span>B.Tech 2nd Year Student • Actively Learning &amp; Building</span>
+              </div>
+              <h1 class="hero-title mb-3">
+                Hi, I'm <span class="text-primary">Nanda Kishore</span>
+              </h1>
+              <p class="hero-subtitle mb-4">
+                Aspiring Software &amp; AI Engineer | Full-Stack Enthusiast
+              </p>
+              <p class="hero-lead mb-4 mx-auto" style="max-width: 760px;">
+                Building my foundation in software development, AI, and full-stack web technologies through hands-on projects, rigorous problem-solving, and continuous learning.
+              </p>
+
+              <!-- Hero Call to Actions -->
+              <div class="hero-actions justify-content-center mb-4">
+                <a href="#projects" class="btn btn-primary-custom" id="heroViewProjectsBtn">
+                  <i class="bi bi-folder2-open"></i> View Projects
+                </a>
+                <button type="button" class="btn btn-secondary-custom" data-bs-toggle="modal" data-bs-target="#resumeModal" id="heroDownloadResumeBtn">
+                  <i class="bi bi-file-earmark-arrow-down"></i> Download Resume
+                </button>
+                <a href="#contact" class="btn btn-outline-custom" id="heroContactBtn">
+                  <i class="bi bi-chat-dots"></i> Contact Me
+                </a>
+              </div>
+
+              <!-- Quick Academic Tag Badge -->
+              <div class="d-inline-flex align-items-center gap-2 px-3 py-2 rounded-pill bg-secondary border border-1 mb-4 text-start">
+                <i class="bi bi-mortarboard-fill text-primary fs-5"></i>
+                <div class="small">
+                  <span class="fw-bold text-primary">B.Tech 2nd Year</span>
+                  <span class="text-muted ms-1" id="heroBranchBadge">• CSE (AI &amp; ML)</span>
+                </div>
+              </div>
+
+              <!-- Social Links -->
+              <div class="d-flex align-items-center gap-3 justify-content-center">
+                <span class="text-muted small fw-semibold">Connect:</span>
+                <div class="social-links">
+                  <a href="https://github.com/nandapulluri11" target="_blank" rel="noopener noreferrer" class="social-link" id="heroGithubLink" aria-label="GitHub Profile" title="GitHub Profile">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="https://www.linkedin.com/in/nandapulluri11/" target="_blank" rel="noopener noreferrer" class="social-link" id="heroLinkedinLink" aria-label="LinkedIn Profile" title="LinkedIn Profile">
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                  <a href="mailto:nandapulluri11@gmail.com" class="social-link" id="heroEmailLink" aria-label="Send Email" title="Send Email">
+                    <i class="bi bi-envelope-fill"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================================
+           3. ABOUT SECTION
+           ========================================================================= -->
+      <section class="section-padding bg-surface" id="about">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">About Me</span>
+            <h2 class="section-title">Academic &amp; Engineering Profile</h2>
+            <p class="section-description">
+              A motivated student developer with a growth mindset, focused on practical application development and computer science core principles.
+            </p>
+          </div>
+
+          <div class="row g-4 align-items-center">
+            <div class="col-lg-6">
+              <div class="card-custom">
+                <h3 class="h4 mb-3">Who I Am</h3>
+                <p class="mb-3" style="font-size: 1.125rem; line-height: 1.75; color: var(--text-primary); font-weight: 500;">
+                  I am a <span class="fw-bold" style="color: var(--text-primary); text-decoration: underline; text-decoration-color: var(--primary-color); text-underline-offset: 4px;">B.Tech 2nd-Year Computer Science student</span> building practical full-stack web applications and AI-driven software.
+                </p>
+                <p>
+                  I enjoy turning concepts into functional applications and continuously expanding my technical foundation through personal projects, certifications, and hands-on learning. Rather than simply learning syntax, I focus on understanding how databases connect with backend APIs and how responsive user interfaces solve real problems for users.
+                </p>
+                <p class="mb-3">
+                  Currently, I am strengthening my grasp of Data Structures and Algorithms, deepening my knowledge of full-stack web development with the MERN stack and relational databases, and exploring practical AI integration using tools like the Gemini API and OpenCV.
+                </p>
+                
+                <!-- Career Objective -->
+                <div class="p-3 bg-secondary rounded border border-1 mb-3">
+                  <div class="d-flex align-items-center gap-2 mb-1 text-primary fw-bold small">
+                    <i class="bi bi-briefcase-fill"></i> CAREER OBJECTIVE
+                  </div>
+                  <p class="small text-secondary mb-0">
+                    Seeking internship opportunities to contribute, learn, and grow in software development, collaborative engineering teams, and real-world system design.
+                  </p>
+                </div>
+
+                <!-- Quick Highlights -->
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="highlight-badge"><i class="bi bi-check-circle-fill text-primary"></i> Problem Solver</span>
+                  <span class="highlight-badge"><i class="bi bi-check-circle-fill text-primary"></i> Full-Stack Learner</span>
+                  <span class="highlight-badge"><i class="bi bi-check-circle-fill text-primary"></i> Hands-on Builder</span>
+                  <span class="highlight-badge"><i class="bi bi-check-circle-fill text-primary"></i> AI Enthusiast</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="row g-3">
+                <div class="col-sm-6">
+                  <div class="about-stat-card">
+                    <div class="about-stat-label">Academic Status</div>
+                    <div class="about-stat-value">B.Tech 2nd Year</div>
+                    <small class="text-muted">Expected Grad: 2028</small>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="about-stat-card">
+                    <div class="about-stat-label">Current Focus</div>
+                    <div class="about-stat-value">Full Stack &amp; AI</div>
+                    <small class="text-muted">MERN, Python, APIs</small>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="about-stat-card">
+                    <div class="about-stat-label">Projects Built</div>
+                    <div class="about-stat-value">8+ Projects</div>
+                    <small class="text-muted">Web &amp; Python Tools</small>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="about-stat-card">
+                    <div class="about-stat-label">Certifications</div>
+                    <div class="about-stat-value">IBM SkillsBuild</div>
+                    <small class="text-muted">AI, GenAI, Security</small>
+                  </div>
+                </div>
+
+                <!-- Explicit Currently Learning Card -->
+                <div class="col-12">
+                  <div class="p-3 rounded bg-secondary border border-1">
+                    <div class="d-flex align-items-center gap-2 mb-2 text-primary fw-bold small">
+                      <i class="bi bi-arrow-repeat"></i> CURRENTLY LEARNING &amp; EXPLORING:
+                    </div>
+                    <div class="d-flex flex-wrap gap-2">
+                      <span class="badge bg-primary-subtle text-primary border border-primary-subtle px-2.5 py-1.5 rounded-pill small fw-semibold">
+                        <i class="bi bi-stack me-1"></i> MERN Stack
+                      </span>
+                      <span class="badge bg-primary-subtle text-primary border border-primary-subtle px-2.5 py-1.5 rounded-pill small fw-semibold">
+                        <i class="bi bi-robot me-1"></i> AI Engineering
+                      </span>
+                      <span class="badge bg-primary-subtle text-primary border border-primary-subtle px-2.5 py-1.5 rounded-pill small fw-semibold">
+                        <i class="bi bi-lightning-charge me-1"></i> FastAPI
+                      </span>
+                      <span class="badge bg-primary-subtle text-primary border border-primary-subtle px-2.5 py-1.5 rounded-pill small fw-semibold">
+                        <i class="bi bi-diagram-3 me-1"></i> Advanced DSA
+                      </span>
+                      <span class="badge bg-primary-subtle text-primary border border-primary-subtle px-2.5 py-1.5 rounded-pill small fw-semibold">
+                        <i class="bi bi-cloud me-1"></i> Cloud Deployment
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Learning Philosophy Card -->
+                <div class="col-12">
+                  <div class="p-3 rounded bg-secondary border border-1">
+                    <div class="d-flex align-items-center gap-2 mb-2 text-primary fw-bold small">
+                      <i class="bi bi-lightbulb-fill"></i> LEARNING PHILOSOPHY
+                    </div>
+                    <p class="mb-0 fw-medium" style="color: var(--text-primary); font-size: 0.95rem; line-height: 1.7; font-style: normal;">
+                      <i class="bi bi-quote text-primary fs-5 align-middle me-1"></i>I believe in building real projects to reinforce theoretical concepts. Every bug solved and feature implemented deepens my comprehension of software architecture.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================================
+           4. SKILLS SECTION
+           ========================================================================= -->
+      <section class="section-padding" id="skills">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Technical Competencies</span>
+            <h2 class="section-title">Skills &amp; Technologies</h2>
+            <p class="section-description">
+              An honest representation of my current technical proficiencies, classified into foundational knowledge, hands-on experience, and active learning areas.
+            </p>
+          </div>
+
+          <!-- Legend -->
+          <div class="d-flex flex-wrap justify-content-center gap-3 mb-4">
+            <span class="d-inline-flex align-items-center gap-1 small text-muted">
+              <span class="badge-fundamental skill-level-badge">Fundamentals</span> Basic concepts &amp; syntax
+            </span>
+            <span class="d-inline-flex align-items-center gap-1 small text-muted">
+              <span class="badge-hands-on skill-level-badge">Hands-on</span> Used in projects
+            </span>
+            <span class="d-inline-flex align-items-center gap-1 small text-muted">
+              <span class="badge-learning skill-level-badge">Currently Learning</span> Active deep dive
+            </span>
+          </div>
+
+          <div class="row g-4">
+            <!-- 1. Frontend -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card-custom">
+                <div class="skill-category-title">
+                  <span class="skill-category-icon"><i class="bi bi-window-sidebar"></i></span>
+                  <span>Frontend Development</span>
+                </div>
+                <div class="skill-items-list">
+                  <div class="skill-item">
+                    <span>HTML5 (Semantic)</span>
+                    <span class="badge-hands-on skill-level-badge">Hands-on</span>
+                  </div>
+                  <div class="skill-item">
+                    <span>CSS3 &amp; Flexbox/Grid</span>
+                    <span class="badge-hands-on skill-level-badge">Hands-on</span>
+                  </div>
+                  <div class="skill-item">
+                    <span>JavaScript (ES6+)</span>
+                    <span class="badge-hands-on skill-level-badge">Hands-on</span>
+                  </div>
+                  <div class="skill-item">
+                    <span>Bootstrap 5</span>
+                    <span class="badge-hands-on skill-level-badge">Hands-on</span>
+                  </div>
+                  <div class="skill-item">
+                    <span>React.js</span>
+                    <span class="badge-fundamental skill-level-badge">Fundamentals</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 2. Programming Languages -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card-custom">
+                <div class="skill-category-title">
+                  <span class="skill-category-icon"><i class="bi bi-code-slash"></i></span>
+                  <span>Programming &amp; Core</span>
+                </div>
+                <div class="skill-items-list">
+                  <div class="skill-item">
+                    <span>Python</span>
+                    <span class="badge-hands-on skill-level-badge">Hands-on</span>
+                  </div>
+                  <div class="skill-item">
+                    <span>Java</span>
+                    <span class="badge-fundamental skill-level-badge">Fundamentals</span>
+                  </div>
+                  <div class="skill-item">
+                    <span>C / C++</span>
+                    <span class="badge-fundamental skill-level-badge">Fundamentals</span>
+                  </div>
+                  <div class="skill-item">
+                    <span>Data Structures &amp; Algorithms</span>
+                    <span class="badge-fundamental skill-level-badge">Fundamentals</span>
+                  </div>
+                  <div class="skill-item">
+                    <span>Object-Oriented Programming</span>
+                    <span class="badge-fundamental skill-level-badge">Fundamentals</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 3. Backend & APIs -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card-custom">
+                <div class="skill-category-title">
+                  <span class="skill-category-icon"><i class="bi bi-server"></i></span>
+                  <span>Backend &amp; Full Stack</span>
+                </div>
+                <div class="skill-items-list">
+                  <div class="skill-item">
+                    <span>Node.js &amp; Express.js</span>
+                    <span class="badge-fundamental skill-level-badge">Working Knowledge</span>
+                  </div>
+                  <div class="skill-item">
+                    <span>Flask</span>
+                    <span class="badge-fundamental skill-level-badge">Basic</span>
+                  </div>
+                  <div class="skill-item">
+                    <span>Django</span>
+                    <span class="badge-learning skill-level-badge">Currently Learning</span>
+                  </div>
+                  <div class="skill-item">
+                    <span>FastAPI</span>
+                    <span class="badge-learning skill-level-badge">Currently Learning</span>
+                  </div>
+                  <div class="skill-item">
+                    <span>REST API Design</span>
+                    <span class="badge-fundamental skill-level-badge">Fundamentals</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 4. Databases -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card-custom">
+                <div class="skill-category-title">
+                  <span class="skill-category-icon"><i class="bi bi-database"></i></span>
+                  <span>Databases</span>
+                </div>
+                <div class="skill-items-list">
+                  <div class="skill-item">
+                    <span>MySQL</span>
+                    <span class="badge-hands-on skill-level-badge">Hands-on</span>
+                  </div>
+                  <div class="skill-item">
+                    <span>SQLite</span>
+                    <span class="badge-hands-on skill-level-badge">Hands-on</span>
+                  </div>
+                  <div class="skill-item">
+                    <span>PostgreSQL</span>
+                    <span class="badge-fundamental skill-level-badge">Fundamentals</span>
+                  </div>
+                  <div class="skill-item">
+                    <span>MongoDB &amp; Atlas</span>
+                    <span class="badge-fundamental skill-level-badge">Working Knowledge</span>
+                  </div>
+                  <div class="skill-item">
+                    <span>Firebase Firestore</span>
+                    <span class="badge-fundamental skill-level-badge">Familiar</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 5. Developer Tools & Platforms -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card-custom">
+                <div class="skill-category-title">
+                  <span class="skill-category-icon"><i class="bi bi-tools"></i></span>
+                  <span>Tools &amp; Platforms</span>
+                </div>
+                <div class="skill-items-list">
+                  <div class="skill-item">
+                    <span>Git &amp; GitHub</span>
+                    <span class="badge-hands-on skill-level-badge">Hands-on</span>
+                  </div>
+                  <div class="skill-item">
+                    <span>VS Code</span>
+                    <span class="badge-hands-on skill-level-badge">Primary IDE</span>
+                  </div>
+                  <div class="skill-item">
+                    <span>Postman</span>
+                    <span class="badge-hands-on skill-level-badge">API Testing</span>
+                  </div>
+                  <div class="skill-item">
+                    <span>Vercel &amp; Netlify</span>
+                    <span class="badge-hands-on skill-level-badge">Deployment</span>
+                  </div>
+                  <div class="skill-item">
+                    <span>Google Cloud / Firebase</span>
+                    <span class="badge-fundamental skill-level-badge">Familiar</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 6. AI & Machine Learning -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card-custom">
+                <div class="skill-category-title">
+                  <span class="skill-category-icon"><i class="bi bi-cpu"></i></span>
+                  <span>AI &amp; Emerging Tech</span>
+                </div>
+                <div class="skill-items-list">
+                  <div class="skill-item">
+                    <span>Generative AI Fundamentals</span>
+                    <span class="badge-fundamental skill-level-badge">Certified</span>
+                  </div>
+                  <div class="skill-item">
+                    <span>Google Gemini API</span>
+                    <span class="badge-hands-on skill-level-badge">Hands-on</span>
+                  </div>
+                  <div class="skill-item">
+                    <span>Computer Vision &amp; OpenCV</span>
+                    <span class="badge-hands-on skill-level-badge">Hands-on</span>
+                  </div>
+                  <div class="skill-item">
+                    <span>TensorFlow</span>
+                    <span class="badge-fundamental skill-level-badge">Fundamentals</span>
+                  </div>
+                  <div class="skill-item">
+                    <span>AI App Development</span>
+                    <span class="badge-learning skill-level-badge">Currently Learning</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================================
+           5. EDUCATION SECTION
+           ========================================================================= -->
+      <section class="section-padding bg-surface" id="education">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Academic Background</span>
+            <h2 class="section-title">Education &amp; Core Coursework</h2>
+            <p class="section-description">
+              Formal engineering education establishing fundamentals in computing, mathematics, and software design.
+            </p>
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="col-lg-9">
+              <!-- Degree Card -->
+              <div class="education-card">
+                <div class="education-node"></div>
+                <span class="education-period">2024 – 2028 (Expected)</span>
+                <h3 class="h4 mb-1">Bachelor of Technology (B.Tech)</h3>
+                <div class="text-primary fw-semibold mb-2" id="eduDegreeBranch">Computer Science &amp; Engineering (AI &amp; ML)</div>
+                <p class="text-muted small mb-3">
+                  <i class="bi bi-geo-alt-fill"></i> <span id="eduCollegeName">Malla Reddy University</span>, Hyderabad • Currently in 2nd Year
+                </p>
+                <p class="mb-3">
+                  Focusing on core computer science foundations, algorithm analysis, artificial intelligence &amp; machine learning, database management systems, and practical full-stack web engineering.
+                </p>
+
+                <!-- Relevant Coursework -->
+                <div class="p-3 bg-secondary rounded border border-1">
+                  <div class="fw-bold small text-primary mb-2">
+                    <i class="bi bi-journal-bookmark-fill me-1"></i> RELEVANT ACADEMIC COURSEWORK:
+                  </div>
+                  <div class="d-flex flex-wrap gap-2">
+                    <span class="tag-badge">Data Structures &amp; Algorithms</span>
+                    <span class="tag-badge">Artificial Intelligence &amp; Machine Learning</span>
+                    <span class="tag-badge">Object-Oriented Programming (Java/Python)</span>
+                    <span class="tag-badge">Database Management Systems (SQL)</span>
+                    <span class="tag-badge">Operating Systems Concepts</span>
+                    <span class="tag-badge">Computer Networks</span>
+                    <span class="tag-badge">Web Application Development</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- High School / Intermediate -->
+              <div class="education-card">
+                <div class="education-node"></div>
+                <span class="education-period">Completed 2024</span>
+                <h3 class="h5 mb-1">Senior Secondary Education (Class XII / Intermediate)</h3>
+                <div class="text-secondary fw-medium mb-1">Mathematics, Physics &amp; Chemistry (MPC Stream)</div>
+                <p class="text-muted small mb-0">
+                  <i class="bi bi-geo-alt-fill"></i> <span id="eduSchoolName">Sri Chaitanya Junior Kalasala</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================================
+           6. PRACTICAL EXPERIENCE & TECHNICAL EXPOSURE
+           ========================================================================= -->
+      <section class="section-padding bg-surface" id="experience">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Hands-on Background</span>
+            <h2 class="section-title">Practical Experience &amp; Technical Exposure</h2>
+            <p class="section-description">
+              Real-world collaborative projects, competitive hackathon sprints, technical symposia, and practical developer laboratories.
+            </p>
+          </div>
+
+          <div class="row g-4">
+            <!-- 1. Hackathon Sprints -->
+            <div class="col-md-6 col-lg-4">
+              <div class="experience-card">
+                <div class="experience-icon-box">
+                  <i class="bi bi-lightning-charge-fill"></i>
+                </div>
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                  <span class="badge bg-primary-subtle text-primary border border-primary-subtle rounded-pill small">Intensive Sprint</span>
+                  <small class="text-muted">2024 – Present</small>
+                </div>
+                <h3 class="h5 mb-2">Hackathon Sprint Development</h3>
+                <div class="text-primary fw-semibold small mb-2">Rapid Prototyping &amp; Collaborative Engineering</div>
+                <p class="text-secondary small mb-3">
+                  Participated in time-constrained 24-hour hackathons building working MVPs, coordinating role responsibilities, and pitching technical solutions under pressure.
+                </p>
+                <div class="mt-auto pt-2 border-top border-1">
+                  <div class="d-flex flex-wrap gap-1">
+                    <span class="tag-badge">Rapid MVP</span>
+                    <span class="tag-badge">Agile Delivery</span>
+                    <span class="tag-badge">Team Coordination</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 2. Technical Event Participation -->
+            <div class="col-md-6 col-lg-4">
+              <div class="experience-card">
+                <div class="experience-icon-box">
+                  <i class="bi bi-trophy-fill"></i>
+                </div>
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                  <span class="badge bg-primary-subtle text-primary border border-primary-subtle rounded-pill small">Symposium</span>
+                  <small class="text-muted">Academic 2024</small>
+                </div>
+                <h3 class="h5 mb-2">Technical Event Participation</h3>
+                <div class="text-primary fw-semibold small mb-2">Yantra Yugam Technical Fest</div>
+                <p class="text-secondary small mb-3">
+                  Engaged in competitive algorithmic coding rounds, system debugging contests, and technical presentations testing core computer science reasoning.
+                </p>
+                <div class="mt-auto pt-2 border-top border-1">
+                  <div class="d-flex flex-wrap gap-1">
+                    <span class="tag-badge">DSA Challenges</span>
+                    <span class="tag-badge">Problem Solving</span>
+                    <span class="tag-badge">Tech Presentation</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 3. AI Project Showcase -->
+            <div class="col-md-6 col-lg-4">
+              <div class="experience-card">
+                <div class="experience-icon-box">
+                  <i class="bi bi-cpu-fill"></i>
+                </div>
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                  <span class="badge bg-primary-subtle text-primary border border-primary-subtle rounded-pill small">Project Lab</span>
+                  <small class="text-muted">Hands-on Program</small>
+                </div>
+                <h3 class="h5 mb-2">AI Project Showcase &amp; Lab</h3>
+                <div class="text-primary fw-semibold small mb-2">Masquerade / Yonvix.ai Technical Track</div>
+                <p class="text-secondary small mb-3">
+                  Hands-on engineering sessions building computer vision pipelines and integrating LLM APIs into web interfaces, learning practical model inference.
+                </p>
+                <div class="mt-auto pt-2 border-top border-1">
+                  <div class="d-flex flex-wrap gap-1">
+                    <span class="tag-badge">GenAI Workflows</span>
+                    <span class="tag-badge">OpenCV</span>
+                    <span class="tag-badge">Model Integration</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 4. Academic Software Development -->
+            <div class="col-md-6 col-lg-6">
+              <div class="experience-card">
+                <div class="experience-icon-box">
+                  <i class="bi bi-terminal-fill"></i>
+                </div>
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                  <span class="badge bg-primary-subtle text-primary border border-primary-subtle rounded-pill small">Academic Projects</span>
+                  <small class="text-muted">Semester Coursework</small>
+                </div>
+                <h3 class="h5 mb-2">Software Development &amp; Code Lab</h3>
+                <div class="text-primary fw-semibold small mb-2">Independent &amp; Peer Project Implementations</div>
+                <p class="text-secondary small mb-3">
+                  Architected and engineered real desktop, console, and web applications including library managers, car rental portals, and automated biometric verification tools. Maintained modular code, schema designs, and test cases.
+                </p>
+                <div class="mt-auto pt-2 border-top border-1">
+                  <div class="d-flex flex-wrap gap-1">
+                    <span class="tag-badge">Database Design</span>
+                    <span class="tag-badge">API Architecture</span>
+                    <span class="tag-badge">Clean Code</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 5. Open Source & Collaboration -->
+            <div class="col-md-6 col-lg-6">
+              <div class="experience-card">
+                <div class="experience-icon-box">
+                  <i class="bi bi-git"></i>
+                </div>
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                  <span class="badge bg-primary-subtle text-primary border border-primary-subtle rounded-pill small">Version Control</span>
+                  <small class="text-muted">Ongoing Practice</small>
+                </div>
+                <h3 class="h5 mb-2">Git Collaboration &amp; Code Reviews</h3>
+                <div class="text-primary fw-semibold small mb-2">Branching Strategies &amp; Peer Reviews</div>
+                <p class="text-secondary small mb-3">
+                  Practicing professional Git workflows: feature branches, descriptive commit histories, pull request discussions, and merge conflict resolution across multi-developer repositories.
+                </p>
+                <div class="mt-auto pt-2 border-top border-1">
+                  <div class="d-flex flex-wrap gap-1">
+                    <span class="tag-badge">Git &amp; GitHub</span>
+                    <span class="tag-badge">PR Workflows</span>
+                    <span class="tag-badge">Code Documentation</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================================
+           6. PROJECTS SECTION
+           ========================================================================= -->
+      <section class="section-padding" id="projects">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Portfolio Showcase</span>
+            <h2 class="section-title">Projects &amp; Practical Work</h2>
+            <p class="section-description">
+              Hands-on projects developed as academic assignments, hackathon challenges, and self-directed learning experiments.
+            </p>
+          </div>
+
+          <!-- 1. FEATURED PROJECT (DriveX - Under Development) -->
+          <div class="featured-project-card">
+            <div class="row g-0 align-items-center">
+              <div class="col-lg-6">
+                <div class="featured-img-wrapper position-relative">
+                  <img src="/assets/images/drivex.svg" onerror="this.onerror=null; this.src='/image.png';" alt="DriveX — Peer-to-Peer Car Rental Marketplace screenshot and live UI" width="600" height="350" loading="lazy" class="img-fluid" />
+                  <div class="position-absolute top-0 start-0 m-3">
+                    <span class="badge bg-warning text-dark fw-bold px-3 py-1.5 shadow-sm rounded-pill">
+                      <i class="bi bi-cone-striped me-1"></i> Under Development • 75%
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="p-4 p-md-5">
+                  <div class="d-flex align-items-center gap-2 mb-2">
+                    <span class="badge bg-primary-subtle text-primary border border-primary-subtle px-2 py-1 rounded-pill small fw-bold">
+                      FEATURED PROJECT
+                    </span>
+                    <span class="status-badge status-dev">
+                      <i class="bi bi-cone-striped me-1"></i> Under Development
+                    </span>
+                  </div>
+                  <h3 class="h3 mb-2">DriveX — Peer-to-Peer Car Rental</h3>
+                  <p class="text-secondary mb-3">
+                    A modern peer-to-peer vehicle booking and rental marketplace designed to simplify car sharing between local hosts and verified drivers. Built with <strong>React + TypeScript</strong>, <strong>FastAPI</strong>, and <strong>PostgreSQL</strong>, featuring multi-tier car search, TanStack Query caching, Pydantic validations, Cloudinary media, and Razorpay checkout.
+                  </p>
+                  
+                  <!-- Development Status Alert & Sprint Progress -->
+                  <div class="p-3 bg-surface rounded border border-warning-subtle mb-3">
+                    <div class="d-flex justify-content-between align-items-center mb-1">
+                      <span class="small fw-bold text-warning-emphasis">
+                        <i class="bi bi-clock-history me-1"></i> Current Sprint: Polish &amp; Host Listing Portal
+                      </span>
+                      <span class="badge bg-warning-subtle text-warning-emphasis border border-warning-subtle small">75% Complete</span>
+                    </div>
+                    <div class="progress mb-2" style="height: 6px;">
+                      <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <p class="mb-0 fw-medium" style="color: var(--text-primary); font-size: 0.925rem; line-height: 1.65;">
+                      <span class="d-block mb-1">
+                        <strong class="text-success"><i class="bi bi-check2-circle me-1"></i>Delivered:</strong>
+                        <span>Hero UI, multi-city destination selector, vehicle filters, booking search widget.</span>
+                      </span>
+                      <span class="d-block">
+                        <strong class="text-warning-emphasis"><i class="bi bi-hourglass-split me-1"></i>In Progress:</strong>
+                        <span>Host listing dashboard, date overlap validation, and test sandbox checkout.</span>
+                      </span>
+                    </p>
+                  </div>
+
+                  <div class="project-tags mb-4">
+                    <span class="tag-badge">React + TypeScript</span>
+                    <span class="tag-badge">FastAPI (Python)</span>
+                    <span class="tag-badge">PostgreSQL + SQLAlchemy</span>
+                    <span class="tag-badge">Tailwind CSS</span>
+                    <span class="tag-badge">shadcn/ui</span>
+                    <span class="tag-badge">Zustand</span>
+                    <span class="tag-badge">TanStack Query</span>
+                    <span class="tag-badge">JWT / bcrypt</span>
+                    <span class="tag-badge">Cloudinary</span>
+                    <span class="tag-badge">Razorpay</span>
+                  </div>
+
+                  <div class="d-flex flex-wrap gap-2">
+                    <a href="https://github.com/[GitHub-URL]/drivex" target="_blank" rel="noopener noreferrer" class="btn btn-primary-custom btn-sm">
+                      <i class="bi bi-github"></i> View GitHub Repository
+                    </a>
+                    <button type="button" class="btn btn-secondary-custom btn-sm" data-bs-toggle="modal" data-bs-target="#projectPreviewModal" data-project-id="drivex" data-project-title="DriveX — Peer-to-Peer Car Rental Marketplace (Under Development)" data-project-desc="DriveX enables car owners to list their vehicles and prospective renters to browse, filter by vehicle type, view daily pricing, and request bookings through a responsive, mobile-first interface.">
+                      <i class="bi bi-info-circle"></i> Case Study &amp; Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Filter Tabs -->
+          <div class="project-filters" role="group" aria-label="Project Categories">
+            <button type="button" class="filter-btn active" data-filter="all">All Projects (9)</button>
+            <button type="button" class="filter-btn" data-filter="web">Web &amp; Frontend</button>
+            <button type="button" class="filter-btn" data-filter="fullstack">Full Stack</button>
+            <button type="button" class="filter-btn" data-filter="python">Python &amp; AI</button>
+            <button type="button" class="filter-btn" data-filter="dev">Under Development</button>
+          </div>
+
+          <!-- Project Grid -->
+          <div class="row g-4">
+            <!-- Project 1: Book Library Management System -->
+            <div class="col-md-6 col-lg-4 project-grid-item" data-category="web python">
+              <div class="project-card">
+                <div class="project-thumbnail">
+                  <img src="/assets/images/library-system.svg" alt="Book Library Management System" width="600" height="350" loading="lazy" />
+                </div>
+                <div class="project-content">
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <span class="status-badge status-completed">Completed</span>
+                    <small class="text-muted">Python / SQLite</small>
+                  </div>
+                  <h4 class="h5 mb-2">Book Library Management</h4>
+                  <p class="text-secondary small mb-3">
+                    A management system for cataloging library inventory, tracking member checkouts and returns, and querying available books with structured database operations.
+                  </p>
+                  <div class="project-tags">
+                    <span class="tag-badge">Python</span>
+                    <span class="tag-badge">SQLite</span>
+                    <span class="tag-badge">Flask Basics</span>
+                    <span class="tag-badge">CRUD</span>
+                  </div>
+                  <div class="project-actions">
+                    <a href="https://github.com/[GitHub-URL]/library-management-system" target="_blank" rel="noopener noreferrer" class="btn btn-outline-custom btn-sm">
+                      <i class="bi bi-github"></i> Code
+                    </a>
+                    <button type="button" class="btn btn-outline-custom btn-sm ms-auto" data-bs-toggle="modal" data-bs-target="#projectPreviewModal" data-project-id="library" data-project-title="Book Library Management System" data-project-desc="This project implements normalized database tables for books, members, and transaction logs. Users can register new books, search by author or genre, and record issue/return deadlines.">
+                      <i class="bi bi-eye"></i> Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 2: Student Face Recognition System -->
+            <div class="col-md-6 col-lg-4 project-grid-item" data-category="python">
+              <div class="project-card">
+                <div class="project-thumbnail">
+                  <img src="/assets/images/face-recognition.svg" alt="Student Face Recognition System" width="600" height="350" loading="lazy" />
+                </div>
+                <div class="project-content">
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <span class="status-badge status-completed">Completed</span>
+                    <small class="text-muted">Computer Vision</small>
+                  </div>
+                  <h4 class="h5 mb-2">Student Face Recognition</h4>
+                  <p class="text-secondary small mb-3">
+                    Computer vision attendance logging tool using OpenCV to detect faces in real-time, match against a student facial dataset, and record timestamped attendance entries.
+                  </p>
+                  <div class="project-tags">
+                    <span class="tag-badge">Python</span>
+                    <span class="tag-badge">OpenCV</span>
+                    <span class="tag-badge">Computer Vision</span>
+                    <span class="tag-badge">CSV Logging</span>
+                  </div>
+                  <div class="project-actions">
+                    <a href="https://github.com/[GitHub-URL]/face-recognition-attendance" target="_blank" rel="noopener noreferrer" class="btn btn-outline-custom btn-sm">
+                      <i class="bi bi-github"></i> Code
+                    </a>
+                    <button type="button" class="btn btn-outline-custom btn-sm ms-auto" data-bs-toggle="modal" data-bs-target="#projectPreviewModal" data-project-id="vision" data-project-title="Student Face Recognition System" data-project-desc="Utilizes Haar Cascade Classifiers and facial embedding extraction to identify enrolled students through a live webcam feed and export verified attendance records into CSV format.">
+                      <i class="bi bi-eye"></i> Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 3: Todo Application -->
+            <div class="col-md-6 col-lg-4 project-grid-item" data-category="web">
+              <div class="project-card">
+                <div class="project-thumbnail">
+                  <img src="/assets/images/todo-app.svg" alt="Todo Application" width="600" height="350" loading="lazy" />
+                </div>
+                <div class="project-content">
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <span class="status-badge status-completed">Completed</span>
+                    <small class="text-muted">Frontend / Vanilla JS</small>
+                  </div>
+                  <h4 class="h5 mb-2">Daily Focus &amp; Todo Tracker</h4>
+                  <p class="text-secondary small mb-3">
+                    Clean, accessible task management application built with pure JavaScript, featuring browser LocalStorage persistence, status filters, and category labels.
+                  </p>
+                  <div class="project-tags">
+                    <span class="tag-badge">HTML5</span>
+                    <span class="tag-badge">CSS3</span>
+                    <span class="tag-badge">JavaScript</span>
+                    <span class="tag-badge">LocalStorage</span>
+                  </div>
+                  <div class="project-actions">
+                    <a href="https://github.com/[GitHub-URL]/todo-app" target="_blank" rel="noopener noreferrer" class="btn btn-outline-custom btn-sm">
+                      <i class="bi bi-github"></i> Code
+                    </a>
+                    <button type="button" class="btn btn-outline-custom btn-sm ms-auto" data-bs-toggle="modal" data-bs-target="#projectPreviewModal" data-project-id="todo" data-project-title="Daily Focus &amp; Todo Tracker" data-project-desc="Built to master DOM manipulation, event delegation, and asynchronous browser state management. Features instant search, priority tagging, and full keyboard navigation.">
+                      <i class="bi bi-eye"></i> Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 4: NutriGuide -->
+            <div class="col-md-6 col-lg-4 project-grid-item" data-category="web dev">
+              <div class="project-card">
+                <div class="project-thumbnail">
+                  <img src="/assets/images/nutriguide.svg" alt="NutriGuide Diet Assistant" width="600" height="350" loading="lazy" />
+                </div>
+                <div class="project-content">
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <span class="status-badge status-dev">Under Development</span>
+                    <small class="text-muted">Web &amp; AI</small>
+                  </div>
+                  <h4 class="h5 mb-2">NutriGuide — Diet Planner</h4>
+                  <p class="text-secondary small mb-3">
+                    Dietary and meal-planning web app under active development to calculate daily macronutrients and provide personalized food recommendations.
+                  </p>
+                  <div class="project-tags">
+                    <span class="tag-badge">React</span>
+                    <span class="tag-badge">Node.js</span>
+                    <span class="tag-badge">Gemini API</span>
+                    <span class="tag-badge">In Development</span>
+                  </div>
+                  <div class="project-actions">
+                    <span class="text-muted small fst-italic">Currently in development</span>
+                    <button type="button" class="btn btn-outline-custom btn-sm ms-auto" data-bs-toggle="modal" data-bs-target="#projectPreviewModal" data-project-id="nutriguide" data-project-title="NutriGuide (Under Development)" data-project-desc="NutriGuide aims to bridge personal fitness tracking with nutritional suggestions by processing dietary preferences, calorie budgets, and food allergen constraints.">
+                      <i class="bi bi-eye"></i> Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 5: Job Hub / Online Job Portal -->
+            <div class="col-md-6 col-lg-4 project-grid-item" data-category="web dev">
+              <div class="project-card">
+                <div class="project-thumbnail">
+                  <img src="/assets/images/jobhub.svg" alt="Job Hub Portal" width="600" height="350" loading="lazy" />
+                </div>
+                <div class="project-content">
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <span class="status-badge status-dev">Under Development</span>
+                    <small class="text-muted">MERN Stack</small>
+                  </div>
+                  <h4 class="h5 mb-2">Job Hub — Portal</h4>
+                  <p class="text-secondary small mb-3">
+                    Web platform designed for undergraduate students to discover entry-level tech openings, track application stages, and submit resumes.
+                  </p>
+                  <div class="project-tags">
+                    <span class="tag-badge">Express.js</span>
+                    <span class="tag-badge">MongoDB</span>
+                    <span class="tag-badge">Bootstrap 5</span>
+                    <span class="tag-badge">In Development</span>
+                  </div>
+                  <div class="project-actions">
+                    <span class="text-muted small fst-italic">Under development</span>
+                    <button type="button" class="btn btn-outline-custom btn-sm ms-auto" data-bs-toggle="modal" data-bs-target="#projectPreviewModal" data-project-id="jobhub" data-project-title="Job Hub (Under Development)" data-project-desc="Currently modeling backend schemas for candidate profiles, job postings, and status pipelines (Applied, Interviewing, Offered).">
+                      <i class="bi bi-eye"></i> Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 6: NovaMart -->
+            <div class="col-md-6 col-lg-4 project-grid-item" data-category="web dev fullstack">
+              <div class="project-card">
+                <div class="project-thumbnail">
+                  <img src="/assets/images/novamart.svg" alt="NovaMart Storefront" width="600" height="350" loading="lazy" />
+                </div>
+                <div class="project-content">
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <span class="status-badge status-dev">Under Development</span>
+                    <small class="text-muted">E-Commerce</small>
+                  </div>
+                  <h4 class="h5 mb-2">NovaMart E-Commerce</h4>
+                  <p class="text-secondary small mb-3">
+                    Modular e-commerce catalog featuring product categorization, cart management, simulated checkout steps, and responsive customer feedback.
+                  </p>
+                  <div class="project-tags">
+                    <span class="tag-badge">JavaScript</span>
+                    <span class="tag-badge">CSS Grid</span>
+                    <span class="tag-badge">REST API</span>
+                    <span class="tag-badge">Under Development</span>
+                  </div>
+                  <div class="project-actions">
+                    <span class="text-muted small fst-italic">Under development</span>
+                    <button type="button" class="btn btn-outline-custom btn-sm ms-auto" data-bs-toggle="modal" data-bs-target="#projectPreviewModal" data-project-id="novamart" data-project-title="NovaMart (Under Development)" data-project-desc="An exploratory project designed to study state management across product catalogs, item quantities, and discount coupon validations.">
+                      <i class="bi bi-eye"></i> Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 7: Streakify (Habit & Study Streak Tracker) -->
+            <div class="col-md-6 col-lg-4 project-grid-item" data-category="web">
+              <div class="project-card">
+                <div class="project-thumbnail">
+                  <img src="/assets/images/streakify.svg" alt="Streakify Habit and Study Tracker" width="600" height="350" loading="lazy" />
+                </div>
+                <div class="project-content">
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <span class="status-badge status-completed">Completed</span>
+                    <small class="text-muted">Frontend / Productivity</small>
+                  </div>
+                  <h4 class="h5 mb-2">Streakify — Habit &amp; Study Tracker</h4>
+                  <p class="text-secondary small mb-3">
+                    Productivity dashboard helping engineering students track daily coding streaks, visualize habit consistency via GitHub-style heatmaps, and log milestones.
+                  </p>
+                  <div class="project-tags">
+                    <span class="tag-badge">JavaScript</span>
+                    <span class="tag-badge">HTML5 Canvas</span>
+                    <span class="tag-badge">LocalStorage</span>
+                    <span class="tag-badge">Data Viz</span>
+                  </div>
+                  <div class="project-actions">
+                    <a href="https://github.com/[GitHub-URL]/streakify-tracker" target="_blank" rel="noopener noreferrer" class="btn btn-outline-custom btn-sm">
+                      <i class="bi bi-github"></i> Code
+                    </a>
+                    <button type="button" class="btn btn-outline-custom btn-sm ms-auto" data-bs-toggle="modal" data-bs-target="#projectPreviewModal" data-project-id="streakify" data-project-title="Streakify — Habit &amp; Study Tracker" data-project-desc="Designed to encourage daily deliberate practice. Features custom canvas-rendered streak visualization, completion statistics, and zero-dependency local storage persistence.">
+                      <i class="bi bi-eye"></i> Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 8: AI Workspace (Multi-tool Studio & Prompt Lab) -->
+            <div class="col-md-6 col-lg-4 project-grid-item" data-category="python ai dev fullstack">
+              <div class="project-card">
+                <div class="project-thumbnail">
+                  <img src="/assets/images/ai-workspace.svg" alt="AI Workspace Prompt and Studio Lab" width="600" height="350" loading="lazy" />
+                </div>
+                <div class="project-content">
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <span class="status-badge status-dev">Under Development</span>
+                    <small class="text-muted">AI &amp; Web</small>
+                  </div>
+                  <h4 class="h5 mb-2">AI Workspace — Multi-tool Studio</h4>
+                  <p class="text-secondary small mb-3">
+                    Unified developer workspace integrating multimodal Gemini API capabilities for code explanation, markdown documentation drafting, and prompt versioning.
+                  </p>
+                  <div class="project-tags">
+                    <span class="tag-badge">Gemini API</span>
+                    <span class="tag-badge">Node.js</span>
+                    <span class="tag-badge">Bootstrap 5</span>
+                    <span class="tag-badge">Markdown</span>
+                  </div>
+                  <div class="project-actions">
+                    <span class="text-muted small fst-italic">Under development</span>
+                    <button type="button" class="btn btn-outline-custom btn-sm ms-auto" data-bs-toggle="modal" data-bs-target="#projectPreviewModal" data-project-id="aiworkspace" data-project-title="AI Workspace — Multi-tool Studio" data-project-desc="Built to explore structured prompt chaining, streaming responses, and practical generative AI assistant workflows for software engineering students.">
+                      <i class="bi bi-eye"></i> Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================================
+           7. CERTIFICATIONS SECTION
+           ========================================================================= -->
+      <section class="section-padding bg-surface" id="certifications">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Credentials &amp; Courses</span>
+            <h2 class="section-title">Certifications &amp; Learning Badges</h2>
+            <p class="section-description">
+              Recognized certificates verifying completed coursework in artificial intelligence, generative technology, and foundational cybersecurity.
+            </p>
+          </div>
+
+          <div class="row g-4">
+            <!-- Cert 1 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card-custom cert-card">
+                <div class="cert-org-badge">
+                  <i class="bi bi-patch-check-fill"></i> IBM SkillsBuild
+                </div>
+                <h3 class="h5 mb-2">Getting Started with Artificial Intelligence</h3>
+                <p class="text-secondary small mb-3">
+                  Comprehensive introduction to AI concepts, neural networks, machine learning fundamentals, ethics, and real-world industrial use cases.
+                </p>
+                <div class="mt-auto pt-3 border-top border-1">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <span class="text-muted small"><i class="bi bi-shield-check text-success me-1"></i>Verified Credential</span>
+                    <button type="button" class="btn btn-outline-custom btn-sm" data-bs-toggle="modal" data-bs-target="#certModal" data-cert-name="Getting Started with Artificial Intelligence" data-cert-org="IBM SkillsBuild">
+                      <i class="bi bi-award"></i> View
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Cert 2 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card-custom cert-card">
+                <div class="cert-org-badge">
+                  <i class="bi bi-patch-check-fill"></i> IBM SkillsBuild
+                </div>
+                <h3 class="h5 mb-2">Generative AI in Action</h3>
+                <p class="text-secondary small mb-3">
+                  Practical coursework on Large Language Models, prompt engineering techniques, generative media creation, and API integration in workflows.
+                </p>
+                <div class="mt-auto pt-3 border-top border-1">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <span class="text-muted small"><i class="bi bi-shield-check text-success me-1"></i>Verified Credential</span>
+                    <button type="button" class="btn btn-outline-custom btn-sm" data-bs-toggle="modal" data-bs-target="#certModal" data-cert-name="Generative AI in Action" data-cert-org="IBM SkillsBuild">
+                      <i class="bi bi-award"></i> View
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Cert 3 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card-custom cert-card">
+                <div class="cert-org-badge">
+                  <i class="bi bi-patch-check-fill"></i> IBM SkillsBuild
+                </div>
+                <h3 class="h5 mb-2">Getting Started with Cybersecurity</h3>
+                <p class="text-secondary small mb-3">
+                  Foundational training on network safety principles, common vulnerability vectors (OWASP), encryption fundamentals, and defense-in-depth strategies.
+                </p>
+                <div class="mt-auto pt-3 border-top border-1">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <span class="text-muted small"><i class="bi bi-shield-check text-success me-1"></i>Verified Credential</span>
+                    <button type="button" class="btn btn-outline-custom btn-sm" data-bs-toggle="modal" data-bs-target="#certModal" data-cert-name="Getting Started with Cybersecurity" data-cert-org="IBM SkillsBuild">
+                      <i class="bi bi-award"></i> View
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================================
+           8. ACHIEVEMENTS SECTION
+           ========================================================================= -->
+      <section class="section-padding" id="achievements">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Extracurricular &amp; Technical Events</span>
+            <h2 class="section-title">Achievements &amp; Activities</h2>
+            <p class="section-description">
+              Collaborative hackathons, technical fest participation, and continuous development milestones.
+            </p>
+          </div>
+
+          <div class="row g-4">
+            <!-- Achievement 1 -->
+            <div class="col-md-6 col-lg-3">
+              <div class="card-custom text-center">
+                <div class="achievement-icon-box mx-auto">
+                  <i class="bi bi-trophy-fill"></i>
+                </div>
+                <h3 class="h6 mb-2">Hackathon Participation</h3>
+                <p class="text-secondary small mb-0">
+                  Participated in student hackathons collaborating in teams under rapid 24-hour development sprints to prototype real-world solutions.
+                </p>
+              </div>
+            </div>
+
+            <!-- Achievement 2 -->
+            <div class="col-md-6 col-lg-3">
+              <div class="card-custom text-center">
+                <div class="achievement-icon-box mx-auto">
+                  <i class="bi bi-gear-wide-connected"></i>
+                </div>
+                <h3 class="h6 mb-2">Yantra Yugam Fest</h3>
+                <p class="text-secondary small mb-0">
+                  Active participant in technical symposium competitions, problem-solving rounds, and coding challenges at Yantra Yugam.
+                </p>
+              </div>
+            </div>
+
+            <!-- Achievement 3 -->
+            <div class="col-md-6 col-lg-3">
+              <div class="card-custom text-center">
+                <div class="achievement-icon-box mx-auto">
+                  <i class="bi bi-stars"></i>
+                </div>
+                <h3 class="h6 mb-2">Masquerade / Yonvix.ai</h3>
+                <p class="text-secondary small mb-0">
+                  Engaged in AI project showcase and technical training programs exploring machine intelligence and hands-on coding.
+                </p>
+              </div>
+            </div>
+
+            <!-- Achievement 4 -->
+            <div class="col-md-6 col-lg-3">
+              <div class="card-custom text-center">
+                <div class="achievement-icon-box mx-auto">
+                  <i class="bi bi-code-square"></i>
+                </div>
+                <h3 class="h6 mb-2">Technical Workshops</h3>
+                <p class="text-secondary small mb-0">
+                  Completed hands-on bootcamps and workshops in full-stack web development, Git version control, and cloud hosting fundamentals.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================================
+           9. LEARNING JOURNEY
+           ========================================================================= -->
+      <section class="section-padding bg-surface" id="journey">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Continuous Growth</span>
+            <h2 class="section-title">My Learning Roadmap</h2>
+            <p class="section-description">
+              A transparent view of how my skills are systematically developing from foundational languages to full-stack engineering and AI.
+            </p>
+          </div>
+
+          <div class="row g-4">
+            <!-- Track 1: Foundation -->
+            <div class="col-md-6 col-lg-4">
+              <div class="journey-step-card">
+                <span class="journey-step-number">01</span>
+                <h3 class="h6 text-primary mb-1">Web Foundation</h3>
+                <p class="text-secondary small mb-2">Core building blocks of the web</p>
+                <div class="journey-progression-path">
+                  <span class="journey-pill">HTML5</span>
+                  <i class="bi bi-arrow-right journey-arrow"></i>
+                  <span class="journey-pill">CSS3</span>
+                  <i class="bi bi-arrow-right journey-arrow"></i>
+                  <span class="journey-pill">JavaScript</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Track 2: Core Programming -->
+            <div class="col-md-6 col-lg-4">
+              <div class="journey-step-card">
+                <span class="journey-step-number">02</span>
+                <h3 class="h6 text-primary mb-1">Programming &amp; Logic</h3>
+                <p class="text-secondary small mb-2">Algorithms &amp; computational thinking</p>
+                <div class="journey-progression-path">
+                  <span class="journey-pill">Python</span>
+                  <i class="bi bi-arrow-right journey-arrow"></i>
+                  <span class="journey-pill">Java</span>
+                  <i class="bi bi-arrow-right journey-arrow"></i>
+                  <span class="journey-pill">DSA</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Track 3: Modern UI -->
+            <div class="col-md-6 col-lg-4">
+              <div class="journey-step-card">
+                <span class="journey-step-number">03</span>
+                <h3 class="h6 text-primary mb-1">Frontend Engineering</h3>
+                <p class="text-secondary small mb-2">Component-based &amp; responsive design</p>
+                <div class="journey-progression-path">
+                  <span class="journey-pill">Bootstrap</span>
+                  <i class="bi bi-arrow-right journey-arrow"></i>
+                  <span class="journey-pill">Modern UI</span>
+                  <i class="bi bi-arrow-right journey-arrow"></i>
+                  <span class="journey-pill">React</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Track 4: Backend -->
+            <div class="col-md-6 col-lg-4">
+              <div class="journey-step-card">
+                <span class="journey-step-number">04</span>
+                <h3 class="h6 text-primary mb-1">Backend &amp; APIs</h3>
+                <p class="text-secondary small mb-2">Server architecture &amp; data exchange</p>
+                <div class="journey-progression-path">
+                  <span class="journey-pill">Flask</span>
+                  <i class="bi bi-arrow-right journey-arrow"></i>
+                  <span class="journey-pill">Node.js</span>
+                  <i class="bi bi-arrow-right journey-arrow"></i>
+                  <span class="journey-pill">Express</span>
+                  <i class="bi bi-arrow-right journey-arrow"></i>
+                  <span class="journey-pill">FastAPI</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Track 5: Full Stack & DB -->
+            <div class="col-md-6 col-lg-4">
+              <div class="journey-step-card">
+                <span class="journey-step-number">05</span>
+                <h3 class="h6 text-primary mb-1">Full Stack &amp; Databases</h3>
+                <p class="text-secondary small mb-2">Data persistence &amp; integration</p>
+                <div class="journey-progression-path">
+                  <span class="journey-pill">MySQL / SQLite</span>
+                  <i class="bi bi-arrow-right journey-arrow"></i>
+                  <span class="journey-pill">MongoDB</span>
+                  <i class="bi bi-arrow-right journey-arrow"></i>
+                  <span class="journey-pill">MERN</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Track 6: AI / Computer Vision -->
+            <div class="col-md-6 col-lg-4">
+              <div class="journey-step-card">
+                <span class="journey-step-number">06</span>
+                <h3 class="h6 text-primary mb-1">AI &amp; Smart Systems</h3>
+                <p class="text-secondary small mb-2">Intelligent features &amp; vision</p>
+                <div class="journey-progression-path">
+                  <span class="journey-pill">OpenCV</span>
+                  <i class="bi bi-arrow-right journey-arrow"></i>
+                  <span class="journey-pill">TensorFlow</span>
+                  <i class="bi bi-arrow-right journey-arrow"></i>
+                  <span class="journey-pill">Gemini AI</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================================
+           10. HACKATHONS & COMPETITIVE EVENTS
+           ========================================================================= -->
+      <section class="section-padding" id="hackathons">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Collaborative Sprints</span>
+            <h2 class="section-title">Hackathon Highlights</h2>
+            <p class="section-description">
+              Intensive problem-solving, rapid prototyping under time constraints, and multi-developer coordination.
+            </p>
+          </div>
+
+          <div class="row g-4">
+            <!-- Hackathon 1 -->
+            <div class="col-lg-6">
+              <div class="hackathon-card">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <span class="badge bg-primary-subtle text-primary border border-primary-subtle rounded-pill px-3 py-1.5 fw-bold">
+                    <i class="bi bi-lightning-charge-fill me-1"></i> 24-HOUR SPRINT
+                  </span>
+                  <span class="text-muted small">Student Hackathon • 2024</span>
+                </div>
+                <h3 class="h5 mb-2">Campus Innovation Hackathon</h3>
+                <p class="text-secondary small mb-3">
+                  Collaborated in a 4-member multidisciplinary student team to design, build, and pitch an accessible web-based resource coordination MVP within 24 continuous hours.
+                </p>
+                <div class="row g-3 mb-3">
+                  <div class="col-sm-6">
+                    <div class="p-2.5 rounded bg-surface border border-1">
+                      <div class="text-muted small fw-semibold">Role</div>
+                      <div class="fw-bold small text-primary">Frontend &amp; API Integration</div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="p-2.5 rounded bg-surface border border-1">
+                      <div class="text-muted small fw-semibold">Outcome</div>
+                      <div class="fw-bold small text-success">Working MVP &amp; Pitch Finalist</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-3 bg-surface rounded border border-1 mb-3">
+                  <div class="text-muted small fw-bold mb-1">Key Engineering Takeaways:</div>
+                  <ul class="small text-secondary mb-0 ps-3">
+                    <li>Learned fast Git branch isolation under concurrent multi-developer commits.</li>
+                    <li>Designed resilient UI states that gracefully handle backend timeout latencies.</li>
+                    <li>Iterated user journeys with peer feedback during mid-sprint checkpoints.</li>
+                  </ul>
+                </div>
+                <div class="d-flex flex-wrap gap-1.5">
+                  <span class="tag-badge">Rapid Prototyping</span>
+                  <span class="tag-badge">Git Workflows</span>
+                  <span class="tag-badge">Cross-functional Team</span>
+                  <span class="tag-badge">Pitch Deck</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Hackathon 2 -->
+            <div class="col-lg-6">
+              <div class="hackathon-card">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <span class="badge bg-primary-subtle text-primary border border-primary-subtle rounded-pill px-3 py-1.5 fw-bold">
+                    <i class="bi bi-trophy-fill me-1"></i> SYMPOSIUM CHALLENGE
+                  </span>
+                  <span class="text-muted small">Yantra Yugam Fest • 2024</span>
+                </div>
+                <h3 class="h5 mb-2">Technical Event &amp; Code Arena</h3>
+                <p class="text-secondary small mb-3">
+                  Competed in rapid algorithmic problem-solving heats, code debugging rounds, and interactive tech trivia exploring computer hardware, networks, and algorithms.
+                </p>
+                <div class="row g-3 mb-3">
+                  <div class="col-sm-6">
+                    <div class="p-2.5 rounded bg-surface border border-1">
+                      <div class="text-muted small fw-semibold">Track</div>
+                      <div class="fw-bold small text-primary">Competitive DSA &amp; Debugging</div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="p-2.5 rounded bg-surface border border-1">
+                      <div class="text-muted small fw-semibold">Outcome</div>
+                      <div class="fw-bold small text-success">Top Tier Participation</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-3 bg-surface rounded border border-1 mb-3">
+                  <div class="text-muted small fw-bold mb-1">Key Engineering Takeaways:</div>
+                  <ul class="small text-secondary mb-0 ps-3">
+                    <li>Practiced optimizing time and space complexities under strict execution time limits.</li>
+                    <li>Identified edge cases such as integer overflow, null pointers, and array bounds.</li>
+                    <li>Enhanced ability to read and debug unfamiliar codebases rapidly.</li>
+                  </ul>
+                </div>
+                <div class="d-flex flex-wrap gap-1.5">
+                  <span class="tag-badge">Algorithmic Thinking</span>
+                  <span class="tag-badge">Code Debugging</span>
+                  <span class="tag-badge">Time Complexity</span>
+                  <span class="tag-badge">Edge Cases</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================================
+           11. OPEN SOURCE & DEVELOPER PROFILES
+           ========================================================================= -->
+      <section class="section-padding bg-surface" id="coding-profiles">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Continuous Practice</span>
+            <h2 class="section-title">Open Source &amp; Developer Profile</h2>
+            <p class="section-description">
+              Tracking my ongoing journey in software development, practical projects, and open-source contributions.
+            </p>
+          </div>
+
+          <div class="row justify-content-center">
+            <!-- GitHub Profile -->
+            <div class="col-md-8 col-lg-6">
+              <div class="coding-profile-card">
+                <div class="profile-card-header">
+                  <div class="profile-brand-icon">
+                    <i class="bi bi-github"></i>
+                  </div>
+                  <div>
+                    <h3 class="h6 mb-0 fw-bold">GitHub</h3>
+                    <small class="text-muted">Open Source &amp; Projects</small>
+                  </div>
+                </div>
+                <p class="text-secondary small mb-3">
+                  Repository host for academic assignments, full-stack prototypes, hackathon codebases, and experimental tools with clean commit histories.
+                </p>
+                <div class="profile-stat-box">
+                  <div class="d-flex justify-content-between mb-1">
+                    <span class="text-muted small">Repositories:</span>
+                    <span class="fw-bold small">10+ Public Repos</span>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <span class="text-muted small">Active Track:</span>
+                    <span class="fw-bold small text-primary">Web, Python &amp; AI</span>
+                  </div>
+                </div>
+                <a href="https://github.com/nandapulluri11" target="_blank" rel="noopener noreferrer" class="btn btn-outline-custom btn-sm w-100 mt-auto" id="profileGithubBtn">
+                  <i class="bi bi-box-arrow-up-right me-1"></i> View GitHub Profile
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================================
+           12. CURRENTLY BUILDING
+           ========================================================================= -->
+      <section class="section-padding" id="building">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Work in Progress</span>
+            <h2 class="section-title">Currently Building</h2>
+            <p class="section-description">
+              A transparent look at the projects currently on my workbench, their current stage of development, and the technical challenges being tackled.
+            </p>
+          </div>
+
+          <div class="row g-4">
+            <!-- Building 1: DriveX -->
+            <div class="col-md-6 col-lg-6">
+              <div class="building-card">
+                <div class="mb-3 rounded overflow-hidden border border-1 position-relative">
+                  <img src="/assets/images/drivex.svg" onerror="this.onerror=null; this.src='/image.png';" alt="DriveX UI preview — Under Development" class="img-fluid w-100" style="max-height: 220px; object-fit: cover; object-position: top center;" loading="lazy" />
+                  <span class="position-absolute top-0 end-0 m-2 badge bg-warning text-dark fw-bold shadow-sm">
+                    <i class="bi bi-cone-striped me-1"></i> Under Development • 75%
+                  </span>
+                </div>
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <span class="status-badge status-dev"><i class="bi bi-hammer me-1"></i> Under Development</span>
+                  <small class="text-muted">Target: Q2 2025</small>
+                </div>
+                <h3 class="h5 mb-2">DriveX — Car Rental Platform</h3>
+                <p class="text-secondary small mb-3">
+                  A peer-to-peer car sharing marketplace connecting local car hosts with verified drivers. Built with React + TypeScript, Tailwind CSS, and FastAPI on PostgreSQL with SQLAlchemy, JWT security, and Razorpay integrations.
+                </p>
+                <div class="mb-3">
+                  <div class="d-flex justify-content-between small text-muted mb-1">
+                    <span>Feature Completion</span>
+                    <span class="fw-bold text-primary">75%</span>
+                  </div>
+                  <div class="progress" style="height: 6px;">
+                    <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                <div class="p-3 bg-secondary rounded border border-1 mb-3">
+                  <div class="text-muted small fw-bold mb-1">Current Active Sprint:</div>
+                  <p class="small text-secondary mb-0">
+                    Integrating Pydantic validation schemas, TanStack Query caching hooks, and Razorpay sandbox checkout flows for vehicle reservations.
+                  </p>
+                </div>
+                <div class="d-flex flex-wrap gap-1.5">
+                  <span class="tag-badge">React + TS</span>
+                  <span class="tag-badge">FastAPI</span>
+                  <span class="tag-badge">PostgreSQL</span>
+                  <span class="tag-badge">SQLAlchemy</span>
+                  <span class="tag-badge">Tailwind CSS</span>
+                  <span class="tag-badge">shadcn/ui</span>
+                  <span class="tag-badge">Zustand</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Building 2: NutriGuide & JobHub -->
+            <div class="col-md-6 col-lg-6">
+              <div class="building-card">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <span class="status-badge status-dev">Schema &amp; API Modeling</span>
+                  <small class="text-muted">Target: Q3 2025</small>
+                </div>
+                <h3 class="h5 mb-2">Job Hub &amp; NutriGuide Backends</h3>
+                <p class="text-secondary small mb-3">
+                  Designing normalized MongoDB schemas and building Express.js REST APIs with JWT authentication, role guards, and structured request validation.
+                </p>
+                <div class="mb-3">
+                  <div class="d-flex justify-content-between small text-muted mb-1">
+                    <span>Backend Architecture</span>
+                    <span class="fw-bold text-primary">50%</span>
+                  </div>
+                  <div class="progress" style="height: 6px;">
+                    <div class="progress-bar bg-primary" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                <div class="p-3 bg-secondary rounded border border-1 mb-3">
+                  <div class="text-muted small fw-bold mb-1">Current Active Sprint:</div>
+                  <p class="small text-secondary mb-0">
+                    Implementing candidate resume upload pipeline and role-based access for recruiter vs. student dashboards.
+                  </p>
+                </div>
+                <div class="d-flex flex-wrap gap-1.5">
+                  <span class="tag-badge">Node.js</span>
+                  <span class="tag-badge">MongoDB</span>
+                  <span class="tag-badge">JWT Auth</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================================
+           13. TECHNICAL WRITING & BLOG
+           ========================================================================= -->
+      <section class="section-padding bg-surface" id="blog">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Knowledge Sharing</span>
+            <h2 class="section-title">Technical Writing &amp; Insights</h2>
+            <p class="section-description">
+              Documenting my learning journey, architectural decisions, and core computer science explanations to cement my own understanding and assist peer developers.
+            </p>
+          </div>
+
+          <div class="alert alert-info border-0 rounded-3 mb-4 text-center py-2.5">
+            <i class="bi bi-info-circle-fill me-2"></i>
+            <strong>Technical articles coming soon!</strong> Below are the initial planned publications currently in draft stage:
+          </div>
+
+          <div class="row g-4">
+            <!-- Article 1 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="blog-preview-card">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <span class="badge bg-primary-subtle text-primary border border-primary-subtle rounded-pill small">Web Architecture</span>
+                  <small class="text-muted">6 min read</small>
+                </div>
+                <h3 class="h6 mb-2 fw-bold">Demystifying Full-Stack Authentication: Cookies vs. JWT</h3>
+                <p class="text-secondary small mb-3">
+                  A beginner-friendly breakdown of stateless tokens versus stateful sessions, including HTTP-only cookie security and token expiration strategies.
+                </p>
+                <div class="mt-auto pt-3 border-top border-1">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <span class="badge bg-secondary text-secondary small">Drafting</span>
+                    <span class="text-primary small fw-semibold">Read Outline <i class="bi bi-arrow-right"></i></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Article 2 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="blog-preview-card">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <span class="badge bg-primary-subtle text-primary border border-primary-subtle rounded-pill small">AI &amp; Web</span>
+                  <small class="text-muted">8 min read</small>
+                </div>
+                <h3 class="h6 mb-2 fw-bold">Integrating Gemini AI into Client-Side Web Apps Safely</h3>
+                <p class="text-secondary small mb-3">
+                  Why API keys should never be exposed to the browser, how lightweight server proxies keep credentials secure, and managing response streams in UX.
+                </p>
+                <div class="mt-auto pt-3 border-top border-1">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <span class="badge bg-secondary text-secondary small">Drafting</span>
+                    <span class="text-primary small fw-semibold">Read Outline <i class="bi bi-arrow-right"></i></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Article 3 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="blog-preview-card">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <span class="badge bg-primary-subtle text-primary border border-primary-subtle rounded-pill small">DSA &amp; Patterns</span>
+                  <small class="text-muted">5 min read</small>
+                </div>
+                <h3 class="h6 mb-2 fw-bold">Solving Algorithmic Sliding Window Problems in Python</h3>
+                <p class="text-secondary small mb-3">
+                  Step-by-step intuition on moving from brute-force O(N²) subarray checks to optimal O(N) sliding windows, with code walkthroughs and diagrams.
+                </p>
+                <div class="mt-auto pt-3 border-top border-1">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <span class="badge bg-secondary text-secondary small">Drafting</span>
+                    <span class="text-primary small fw-semibold">Read Outline <i class="bi bi-arrow-right"></i></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================================
+           14. RESUME & CREDENTIALS PORTAL
+           ========================================================================= -->
+      <section class="section-padding" id="resume">
+        <div class="container">
+          <div class="card-custom border-2 border-primary-subtle p-4 p-md-5">
+            <div class="row align-items-center g-4">
+              <div class="col-lg-8">
+                <span class="section-tag">Recruiter Ready</span>
+                <h2 class="h3 fw-bold mb-2">Curriculum Vitae &amp; Credentials</h2>
+                <p class="text-secondary mb-3">
+                  A structured overview of my academic progression, technical skills, hands-on projects, verified certifications, and extracurricular achievements.
+                </p>
+                <div class="d-flex flex-wrap gap-3 align-items-center">
+                  <a href="/assets/resume/resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary-custom" id="resumeViewPdfBtn">
+                    <i class="bi bi-file-earmark-pdf-fill"></i> View Resume (PDF)
+                  </a>
+                  <a href="/assets/resume/resume.pdf" download="Nanda_Kishore_Resume.pdf" class="btn btn-outline-custom" id="resumeDownloadPdfBtn">
+                    <i class="bi bi-download"></i> Download Resume
+                  </a>
+                  <button type="button" class="btn btn-outline-custom" data-bs-toggle="modal" data-bs-target="#resumeModal">
+                    <i class="bi bi-info-circle"></i> Instructions &amp; Fallback
+                  </button>
+                </div>
+              </div>
+              <div class="col-lg-4 text-center">
+                <div class="p-3 bg-secondary rounded border border-1 text-start">
+                  <div class="d-flex align-items-center gap-2 mb-2 text-primary fw-bold small">
+                    <i class="bi bi-briefcase-fill"></i> RECRUITER QUICK NOTE:
+                  </div>
+                  <p class="small text-secondary mb-2">
+                    Available for <strong>Summer 2025 &amp; 2026 Software Engineering Internships</strong>. Willing to relocate or work remotely.
+                  </p>
+                  <a href="mailto:nandapulluri11@gmail.com?subject=Internship%20Inquiry%20-%20Nanda%20Kishore" class="btn btn-sm btn-outline-custom w-100 text-center">
+                    <i class="bi bi-envelope-fill me-1"></i> Quick Email Contact
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================================
+           10. CONTACT SECTION
+           ========================================================================= -->
+      <section class="section-padding" id="contact">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Let's Connect</span>
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-description">
+              I am open to internship opportunities, student projects, hackathons, and technical discussions. Feel free to reach out!
+            </p>
+          </div>
+
+          <div class="row g-5">
+            <!-- Contact Information Cards -->
+            <div class="col-lg-5">
+              <h3 class="h4 mb-4">Contact Information</h3>
+              
+              <div class="contact-info-card">
+                <div class="contact-icon-wrapper">
+                  <i class="bi bi-envelope-fill"></i>
+                </div>
+                <div>
+                  <div class="text-muted small fw-semibold">Email Address</div>
+                  <a href="mailto:nandapulluri11@gmail.com" class="fw-bold text-decoration-none">
+                    nandapulluri11@gmail.com
+                  </a>
+                  <div class="text-muted small mt-1">Available for inquiries &amp; internships</div>
+                </div>
+              </div>
+
+              <div class="contact-info-card">
+                <div class="contact-icon-wrapper">
+                  <i class="bi bi-telephone-fill"></i>
+                </div>
+                <div>
+                  <div class="text-muted small fw-semibold">Phone Number</div>
+                  <div class="fw-bold" id="contactPhoneText">Available upon request</div>
+                  <div class="text-muted small mt-1">Direct inquiries via email</div>
+                </div>
+              </div>
+
+              <div class="contact-info-card">
+                <div class="contact-icon-wrapper">
+                  <i class="bi bi-geo-alt-fill"></i>
+                </div>
+                <div>
+                  <div class="text-muted small fw-semibold">Location</div>
+                  <div class="fw-bold" id="contactLocationText">Hyderabad, Telangana, India</div>
+                  <div class="text-muted small mt-1">Open to on-site, hybrid, &amp; remote roles</div>
+                </div>
+              </div>
+
+              <div class="contact-info-card">
+                <div class="contact-icon-wrapper">
+                  <i class="bi bi-linkedin"></i>
+                </div>
+                <div>
+                  <div class="text-muted small fw-semibold">Professional Profile</div>
+                  <a href="https://www.linkedin.com/in/nandapulluri11/" target="_blank" rel="noopener noreferrer" class="fw-bold text-decoration-none" id="contactLinkedinLink">
+                    linkedin.com/in/nandapulluri11
+                  </a>
+                  <div class="text-muted small mt-1">Let's connect professionally</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="col-lg-7">
+              <div class="card-custom p-4 p-md-5">
+                <h3 class="h4 mb-2">Send a Message</h3>
+                <p class="text-secondary small mb-4">
+                  Fill in your details below to send a message. Submitting provides a convenient option to launch your email client with your message pre-composed.
+                </p>
+
+                <form id="portfolioContactForm" novalidate>
+                  <div class="row g-3">
+                    <div class="col-md-6 form-group">
+                      <label for="contactName" class="form-label-custom">Your Full Name <span class="text-danger">*</span></label>
+                      <input type="text" class="form-control form-control-custom" id="contactName" placeholder="e.g., Alex Smith" required />
+                      <div class="invalid-feedback-custom">Please enter your name.</div>
+                    </div>
+
+                    <div class="col-md-6 form-group">
+                      <label for="contactEmail" class="form-label-custom">Your Email <span class="text-danger">*</span></label>
+                      <input type="email" class="form-control form-control-custom" id="contactEmail" placeholder="e.g., alex@company.com" required />
+                      <div class="invalid-feedback-custom">Please enter a valid email address.</div>
+                    </div>
+
+                    <div class="col-12 form-group">
+                      <label for="contactSubject" class="form-label-custom">Subject <span class="text-danger">*</span></label>
+                      <input type="text" class="form-control form-control-custom" id="contactSubject" placeholder="e.g., Internship Opportunity / Project Collaboration" required />
+                      <div class="invalid-feedback-custom">Please enter a subject.</div>
+                    </div>
+
+                    <div class="col-12 form-group">
+                      <label for="contactMessage" class="form-label-custom">Message <span class="text-danger">*</span></label>
+                      <textarea class="form-control form-control-custom" id="contactMessage" rows="5" placeholder="Write your message or inquiry here..." required></textarea>
+                      <div class="invalid-feedback-custom">Please enter your message (at least 10 characters).</div>
+                    </div>
+
+                    <div class="col-12 mt-4">
+                      <button type="submit" class="btn btn-primary-custom w-100 justify-content-center py-2" id="submitContactBtn">
+                        <i class="bi bi-send-fill"></i> Send Message
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- =========================================================================
+         11. FOOTER
+         ========================================================================= -->
+    <footer class="footer-custom">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-md-6 text-center text-md-start">
+            <div class="d-inline-flex align-items-center gap-2 mb-2">
+              <span class="brand-icon">NK</span>
+              <span class="h5 mb-0 fw-bold">Nanda Kishore</span>
+            </div>
+            <p class="text-secondary small mb-0">
+              B.Tech Student • Aspiring Software &amp; AI Engineer • Always curious, always learning.
+            </p>
+          </div>
+
+          <div class="col-md-6">
+            <ul class="list-unstyled d-flex flex-wrap justify-content-center justify-content-md-end gap-3 mb-0">
+              <li><a href="#hero" class="footer-nav-link">Home</a></li>
+              <li><a href="#about" class="footer-nav-link">About</a></li>
+              <li><a href="#skills" class="footer-nav-link">Skills</a></li>
+              <li><a href="#education" class="footer-nav-link">Education</a></li>
+              <li><a href="#projects" class="footer-nav-link">Projects</a></li>
+              <li><a href="#certifications" class="footer-nav-link">Certifications</a></li>
+              <li><a href="#contact" class="footer-nav-link">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom text-center">
+          <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center gap-2">
+            <div>
+              &copy; <span id="currentYear">2026</span> Nanda Kishore. All rights reserved.
+            </div>
+            <div>
+              Designed &amp; built with Semantic HTML5, CSS3, JavaScript &amp; Bootstrap 5
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button class="back-to-top" id="backToTopBtn" type="button" aria-label="Back to top" title="Back to top">
+      <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- =========================================================================
+         MODALS (Resume, Project Details, Contact Confirmation)
+         ========================================================================= -->
+    <!-- 1. Resume Modal -->
+    <div class="modal fade" id="resumeModal" tabindex="-1" aria-labelledby="resumeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content modal-content-custom">
+          <div class="modal-header modal-header-custom">
+            <h5 class="modal-title h5" id="resumeModalLabel">
+              <i class="bi bi-file-earmark-person-fill text-primary me-2"></i> Resume Information
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-4">
+            <p>
+              Welcome! This portfolio represents the personal profile of <strong>Nanda Kishore</strong>, 2nd-year B.Tech undergraduate.
+            </p>
+            <div class="p-3 bg-secondary rounded border border-1 mb-3">
+              <div class="small fw-bold text-primary mb-1">
+                <i class="bi bi-info-circle-fill"></i> RESUME FILE INSTRUCTIONS:
+              </div>
+              <p class="small text-muted mb-0">
+                To download or replace the PDF resume, save your file inside <code>/assets/resume/resume.pdf</code>.
+              </p>
+            </div>
+            <p class="small text-secondary mb-0">
+              For immediate recruiter review, please view my <strong>Skills</strong>, <strong>Projects</strong>, and <strong>Certifications</strong> sections directly on this page, or connect with me via email or LinkedIn.
+            </p>
+          </div>
+          <div class="modal-footer modal-footer-custom">
+            <button type="button" class="btn btn-secondary-custom btn-sm" data-bs-dismiss="modal">Close</button>
+            <a href="mailto:nandapulluri11@gmail.com?subject=Resume%20Request%20-%20Nanda%20Kishore" class="btn btn-primary-custom btn-sm">
+              <i class="bi bi-envelope"></i> Request Resume via Email
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. Project Case Study & Details Modal -->
+    <div class="modal fade" id="projectPreviewModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+        <div class="modal-content modal-content-custom">
+          <div class="modal-header modal-header-custom border-bottom">
+            <div class="d-flex align-items-center gap-2">
+              <span class="badge bg-primary-subtle text-primary border border-primary-subtle rounded-pill px-2.5 py-1 small" id="modalProjectBadge">
+                Project Case Study
+              </span>
+              <h5 class="modal-title h5 mb-0 fw-bold" id="modalProjectTitle">Project Overview</h5>
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-4">
+            <!-- Project Tagline / Summary -->
+            <p class="text-secondary mb-3" id="modalProjectDesc">Project Description</p>
+
+            <!-- Project Live UI Preview Banner (Dynamic) -->
+            <div class="mb-4 rounded overflow-hidden border border-1 position-relative" id="modalProjectImageContainer" style="display: none;">
+              <img src="" id="modalProjectImg" class="img-fluid w-100" style="max-height: 280px; object-fit: cover; object-position: top center;" alt="Project Interface Preview" />
+              <span id="modalImageBadge" class="position-absolute top-0 end-0 m-2 badge bg-warning text-dark fw-bold shadow-sm" style="display: none;">
+                <i class="bi bi-cone-striped me-1"></i> Under Development
+              </span>
+            </div>
+
+            <!-- Interactive Architecture Flow Diagram Container -->
+            <div class="mb-4" id="modalArchitectureContainer">
+              <div class="d-flex align-items-center gap-2 mb-2 text-primary fw-bold small">
+                <i class="bi bi-diagram-3-fill"></i> ARCHITECTURE &amp; DATA FLOW:
+              </div>
+              <div class="arch-flow-diagram" id="modalArchDiagram">
+                <div class="arch-node">
+                  <div class="arch-node-title">Client / Browser</div>
+                  <div class="arch-node-sub">Vanilla JS / UI</div>
+                </div>
+                <div class="arch-arrow">
+                  <i class="bi bi-arrow-right"></i>
+                </div>
+                <div class="arch-node">
+                  <div class="arch-node-title">State &amp; Router</div>
+                  <div class="arch-node-sub">Event Listeners</div>
+                </div>
+                <div class="arch-arrow">
+                  <i class="bi bi-arrow-right"></i>
+                </div>
+                <div class="arch-node">
+                  <div class="arch-node-title">Data Store</div>
+                  <div class="arch-node-sub">Storage / DB</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Detailed Grid: Problem, Solution, Trade-offs -->
+            <div class="row g-3 mb-3">
+              <div class="col-md-6">
+                <div class="p-3 bg-secondary rounded border border-1 h-100">
+                  <div class="fw-bold text-primary small mb-1">
+                    <i class="bi bi-question-circle-fill me-1"></i> Problem Statement
+                  </div>
+                  <p class="small text-secondary mb-0" id="modalProblemStatement">
+                    Addressing usability gaps, data persistence, and responsive customer workflows.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="p-3 bg-secondary rounded border border-1 h-100">
+                  <div class="fw-bold text-primary small mb-1">
+                    <i class="bi bi-lightbulb-fill me-1"></i> Technical Solution
+                  </div>
+                  <p class="small text-secondary mb-0" id="modalTechnicalSolution">
+                    Engineered modular components and clean data normalization pipelines.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Engineering Decisions & Trade-offs -->
+            <div class="p-3 bg-secondary rounded border border-1 mb-3">
+              <div class="fw-bold text-primary small mb-1">
+                <i class="bi bi-gear-fill me-1"></i> Key Trade-offs &amp; Engineering Decisions
+              </div>
+              <p class="small text-secondary mb-0" id="modalTradeoffs">
+                Prioritized modularity, clean error handling, and cross-browser responsiveness over heavy external dependencies.
+              </p>
+            </div>
+
+            <!-- Complete Tech Stack Breakdown (Dynamic for DriveX and extensible) -->
+            <div class="mb-3" id="modalTechStackContainer" style="display: none;">
+              <div class="p-3 bg-secondary rounded border border-1">
+                <div class="d-flex align-items-center justify-content-between mb-2">
+                  <div class="fw-bold text-primary small">
+                    <i class="bi bi-layers-fill me-1"></i> Technical Architecture &amp; Complete Tech Stack
+                  </div>
+                  <span class="badge bg-primary-subtle text-primary border border-primary-subtle small">Production Stack</span>
+                </div>
+                <div class="table-responsive">
+                  <table class="table table-sm table-hover mb-0 small" id="modalTechStackTable" style="color: var(--text-primary); font-size: 0.85rem;">
+                    <thead>
+                      <tr class="border-bottom text-muted">
+                        <th scope="col" style="width: 25%;">Layer</th>
+                        <th scope="col" style="width: 35%;">Technology</th>
+                        <th scope="col" style="width: 40%;">Purpose</th>
+                      </tr>
+                    </thead>
+                    <tbody id="modalTechStackBody">
+                      <!-- Populated dynamically -->
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <!-- Lessons Learned -->
+            <div class="p-3 bg-secondary rounded border border-1">
+              <div class="fw-bold text-primary small mb-1">
+                <i class="bi bi-mortarboard-fill me-1"></i> Lessons Learned &amp; Next Steps
+              </div>
+              <p class="small text-secondary mb-0" id="modalLessonsLearned">
+                Reinforced the value of semantic structure, defensive state validation, and clean Git commits.
+              </p>
+            </div>
+          </div>
+          <div class="modal-footer modal-footer-custom border-top">
+            <button type="button" class="btn btn-secondary-custom btn-sm" data-bs-dismiss="modal">Close</button>
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary-custom btn-sm" id="modalProjectGithubLink">
+              <i class="bi bi-github"></i> View GitHub Repository
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. Certification Modal -->
+    <div class="modal fade" id="certModal" tabindex="-1" aria-labelledby="certModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content modal-content-custom">
+          <div class="modal-header modal-header-custom">
+            <h5 class="modal-title h5" id="certModalLabel">Certification Verification</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-4">
+            <h6 class="fw-bold text-primary" id="modalCertName">Certificate Name</h6>
+            <div class="text-muted small mb-3" id="modalCertOrg">Issued by IBM SkillsBuild</div>
+            <div class="p-3 bg-secondary rounded border border-1">
+              <div class="small fw-bold mb-1"><i class="bi bi-patch-check-fill text-primary me-1"></i> Credential Verification:</div>
+              <p class="small text-muted mb-2">
+                Program Status: <span class="badge bg-success-subtle text-success border border-success-subtle">Verified &amp; Completed</span>
+              </p>
+              <p class="small text-secondary mb-0">
+                Official curriculum completed via IBM SkillsBuild student learning portal. Credential details and certificates available for verification upon review.
+              </p>
+            </div>
+          </div>
+          <div class="modal-footer modal-footer-custom">
+            <button type="button" class="btn btn-secondary-custom btn-sm" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. Contact Confirmation Modal -->
+    <div class="modal fade" id="contactSuccessModal" tabindex="-1" aria-labelledby="contactSuccessModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content modal-content-custom">
+          <div class="modal-header modal-header-custom">
+            <h5 class="modal-title h5 text-success" id="contactSuccessModalLabel">
+              <i class="bi bi-check-circle-fill me-2"></i> Message Ready
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-4">
+            <p>
+              Thank you for reaching out! Since this is a static frontend portfolio demonstration, you can send this message directly via your email client.
+            </p>
+            <div class="p-3 bg-secondary rounded border border-1 mb-3">
+              <div class="small fw-semibold text-primary mb-1">Recipient:</div>
+              <div class="small font-monospace">nandapulluri11@gmail.com</div>
+            </div>
+            <p class="small text-muted mb-0">
+              Click the button below to launch your default email client with your subject and message prefilled!
+            </p>
+          </div>
+          <div class="modal-footer modal-footer-custom">
+            <button type="button" class="btn btn-secondary-custom btn-sm" data-bs-dismiss="modal">Dismiss</button>
+            <a href="#" id="confirmMailtoBtn" class="btn btn-primary-custom btn-sm">
+              <i class="bi bi-envelope-open-fill"></i> Open in Email Client
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- =========================================================================
+         AI CHATBOT WIDGET (Gemini Multi-Turn Assistant)
+         ========================================================================= -->
+    <!-- Floating AI Chat Launcher Button -->
+    <div class="ai-chat-launcher-container" id="aiChatLauncherContainer">
+      <button class="ai-chat-launcher-btn" id="aiChatLauncherBtn" type="button" aria-label="Open AI Portfolio Assistant" title="Chat with Nanda's AI Assistant">
+        <span class="ai-chat-status-pulse"></span>
+        <i class="bi bi-chat-dots-fill ai-launcher-icon-chat fs-5" id="launcherChatIcon"></i>
+        <i class="bi bi-x-lg ai-launcher-icon-close fs-5 d-none" id="launcherCloseIcon"></i>
+        <span class="ai-chat-launcher-label d-none d-md-inline">Ask Nanda's AI</span>
+      </button>
+    </div>
+
+    <!-- AI Chatbot Window -->
+    <div class="ai-chat-window d-none" id="aiChatWindow" role="dialog" aria-labelledby="aiChatTitle" aria-modal="true">
+      <!-- Header -->
+      <div class="ai-chat-header d-flex align-items-center justify-content-between p-3 border-bottom">
+        <div class="d-flex align-items-center gap-2">
+          <div class="ai-chat-avatar">
+            <i class="bi bi-robot"></i>
+          </div>
+          <div>
+            <div class="d-flex align-items-center gap-2">
+              <h2 class="h6 mb-0 fw-bold" id="aiChatTitle">Nanda AI Assistant</h2>
+              <span class="badge bg-success-subtle text-success rounded-pill px-2 py-0.5" style="font-size: 0.65rem;">
+                <i class="bi bi-record-fill text-success me-1"></i>Online
+              </span>
+            </div>
+            <p class="text-secondary small mb-0" style="font-size: 0.72rem;">Powered by Google Gemini</p>
+          </div>
+        </div>
+        
+        <div class="d-flex align-items-center gap-1">
+          <!-- Clear conversation button -->
+          <button class="btn btn-sm btn-icon-custom" id="aiChatClearBtn" type="button" title="Clear conversation" aria-label="Clear conversation">
+            <i class="bi bi-arrow-counterclockwise"></i>
+          </button>
+          <!-- Minimize / close button -->
+          <button class="btn btn-sm btn-icon-custom" id="aiChatCloseBtn" type="button" title="Close chat" aria-label="Close chat">
+            <i class="bi bi-x-lg"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Scrollable Message Thread -->
+      <div class="ai-chat-body p-3" id="aiChatMessages" tabindex="0" aria-live="polite">
+        <!-- Default greeting message -->
+        <div class="ai-message ai-message-model mb-3">
+          <div class="ai-message-avatar">
+            <i class="bi bi-robot"></i>
+          </div>
+          <div class="ai-message-content">
+            <div class="ai-message-bubble">
+              <p class="mb-1"><strong>Hello! I'm Nanda's AI Assistant.</strong></p>
+              <p class="mb-2">I'm here to answer questions regarding Nanda Kishore's background, technical stack, projects (like <strong>DriveX</strong>), coursework, verified certifications, or his suitability for software engineering internships.</p>
+              <p class="small text-secondary mb-0">Ask me anything, or pick a suggested topic below:</p>
+            </div>
+            <span class="ai-message-time" id="aiInitialGreetingTime">Just now</span>
+          </div>
+        </div>
+
+        <!-- Suggested Quick Prompts -->
+        <div class="ai-quick-prompts mb-2" id="aiQuickPrompts">
+          <span class="small text-secondary d-block mb-1.5 fw-semibold" style="font-size: 0.72rem;">Suggested questions:</span>
+          <div class="d-flex flex-wrap gap-1.5">
+            <button class="btn btn-sm btn-quick-prompt" type="button" data-prompt="Can you tell me about the DriveX project architecture and tech stack?">
+              🚗 DriveX Project
+            </button>
+            <button class="btn btn-sm btn-quick-prompt" type="button" data-prompt="What are Nanda Kishore's core technical skills and programming proficiencies?">
+              ⚡ Core Skills
+            </button>
+            <button class="btn btn-sm btn-quick-prompt" type="button" data-prompt="Why should a tech company hire Nanda for a Software Engineering Internship?">
+              💼 Why Hire Nanda?
+            </button>
+            <button class="btn btn-sm btn-quick-prompt" type="button" data-prompt="What certifications has Nanda earned from IBM SkillsBuild?">
+              🎓 IBM Certifications
+            </button>
+            <button class="btn btn-sm btn-quick-prompt" type="button" data-prompt="How can I contact Nanda or schedule an interview with him?">
+              📬 Contact Details
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chat Input Footer -->
+      <div class="ai-chat-footer p-3 border-top">
+        <form id="aiChatForm" class="d-flex align-items-end gap-2">
+          <div class="position-relative flex-grow-1">
+            <textarea
+              id="aiChatInput"
+              class="form-control ai-chat-textarea"
+              rows="1"
+              placeholder="Ask a question about Nanda's portfolio..."
+              aria-label="Ask a question about Nanda's portfolio"
+              required
+            ></textarea>
+          </div>
+          <button class="btn btn-primary-custom ai-chat-send-btn" id="aiChatSendBtn" type="submit" aria-label="Send message" title="Send message">
+            <i class="bi bi-send-fill"></i>
+          </button>
+        </form>
+        <div class="d-flex align-items-center justify-content-between mt-2 px-1">
+          <span class="small text-secondary" style="font-size: 0.68rem;">Enter to send, Shift+Enter for newline</span>
+          <span class="small text-secondary" style="font-size: 0.68rem;">
+            <i class="bi bi-sparkles text-primary me-1"></i>Powered by Gemini
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap 5.3 Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- Centralized Portfolio Configuration -->
+    <script src="/js/portfolioConfig.js"></script>
+
+    <!-- Custom Portfolio Script -->
+    <script src="/js/script.js"></script>
+
+    <!-- Modal helper script for dynamic content injection -->
+    <script>
+      // Project preview modal trigger handler
+      const projectModalEl = document.getElementById('projectPreviewModal');
+      if (projectModalEl) {
+        projectModalEl.addEventListener('show.bs.modal', function (event) {
+          const button = event.relatedTarget;
+          const title = button.getAttribute('data-project-title');
+          const desc = button.getAttribute('data-project-desc');
+          document.getElementById('modalProjectTitle').textContent = title || 'Project Details';
+          document.getElementById('modalProjectDesc').textContent = desc || '';
+        });
+      }
+
+      // Cert modal trigger handler
+      const certModalEl = document.getElementById('certModal');
+      if (certModalEl) {
+        certModalEl.addEventListener('show.bs.modal', function (event) {
+          const button = event.relatedTarget;
+          const certName = button.getAttribute('data-cert-name');
+          const certOrg = button.getAttribute('data-cert-org');
+          document.getElementById('modalCertName').textContent = certName || 'Certificate';
+          document.getElementById('modalCertOrg').textContent = 'Issued by ' + (certOrg || 'IBM SkillsBuild');
+        });
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 350" width="100%" height="100%">
+  <defs>
+    <linearGradient id="jobBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1e38" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="350" fill="url(#jobBg)"/>
+  <rect x="60" y="30" width="480" height="290" rx="14" fill="#0f172a" stroke="#818cf8" stroke-width="1.5" />
+  <text x="90" y="70" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#f8fafc">Job Hub Portal (In Development)</text>
+  <!-- Search bar -->
+  <rect x="90" y="90" width="420" height="36" rx="8" fill="#1e293b" stroke="#475569" />
+  <text x="110" y="113" font-family="system-ui, sans-serif" font-size="12" fill="#94a3b8">Search software engineering internships &amp; junior roles...</text>
+  <!-- Job cards -->
+  <rect x="90" y="140" width="420" height="60" rx="8" fill="#1e293b" stroke="#334155" />
+  <text x="110" y="165" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#f8fafc">Junior Frontend Developer (React / JavaScript)</text>
+  <text x="110" y="184" font-family="system-ui, sans-serif" font-size="11" fill="#818cf8">TechCorp Solutions • Remote / Hybrid • 0-1 yrs exp</text>
+
+  <rect x="90" y="215" width="420" height="60" rx="8" fill="#1e293b" stroke="#334155" />
+  <text x="110" y="240" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#f8fafc">Python Backend Intern (Django / Flask)</text>
+  <text x="110" y="259" font-family="system-ui, sans-serif" font-size="11" fill="#818cf8">DataVibe Labs • Bangalore / Remote • 2026 Batch</text>
+</svg>

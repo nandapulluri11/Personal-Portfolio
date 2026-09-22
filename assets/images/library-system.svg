@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 350" width="100%" height="100%">
+  <defs>
+    <linearGradient id="libBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="350" fill="url(#libBg)"/>
+  <rect x="40" y="30" width="520" height="290" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1.5" />
+  <rect x="40" y="30" width="520" height="38" rx="12" fill="#0f172a" />
+  <circle cx="65" cy="49" r="5" fill="#ef4444" />
+  <circle cx="82" cy="49" r="5" fill="#f59e0b" />
+  <circle cx="99" cy="49" r="5" fill="#10b981" />
+  <text x="135" y="53" font-family="monospace" font-size="10" fill="#a5b4fc">Library Management System</text>
+  <!-- Table Mockup -->
+  <rect x="65" y="85" width="470" height="35" rx="6" fill="#0f172a" />
+  <text x="85" y="107" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#93c5fd">Book Title</text>
+  <text x="230" y="107" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#93c5fd">Author</text>
+  <text x="360" y="107" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#93c5fd">Status</text>
+  <text x="450" y="107" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#93c5fd">Action</text>
+  <!-- Rows -->
+  <line x1="65" y1="140" x2="535" y2="140" stroke="#334155" stroke-width="1"/>
+  <text x="85" y="133" font-family="system-ui, sans-serif" font-size="12" fill="#f1f5f9">Data Structures &amp; Algorithms</text>
+  <text x="230" y="133" font-family="system-ui, sans-serif" font-size="12" fill="#cbd5e1">Mark Weiss</text>
+  <text x="360" y="133" font-family="system-ui, sans-serif" font-size="11" fill="#34d399">Available</text>
+  <rect x="450" y="122" width="55" height="20" rx="4" fill="#3b82f6" />
+  <text x="463" y="136" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#ffffff">Issue</text>
+
+  <line x1="65" y1="180" x2="535" y2="180" stroke="#334155" stroke-width="1"/>
+  <text x="85" y="173" font-family="system-ui, sans-serif" font-size="12" fill="#f1f5f9">Introduction to Algorithms (CLRS)</text>
+  <text x="230" y="173" font-family="system-ui, sans-serif" font-size="12" fill="#cbd5e1">Cormen et al.</text>
+  <text x="360" y="173" font-family="system-ui, sans-serif" font-size="11" fill="#f59e0b">Issued</text>
+  <rect x="450" y="162" width="55" height="20" rx="4" fill="#475569" />
+  <text x="461" y="176" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#cbd5e1">Return</text>
+
+  <line x1="65" y1="220" x2="535" y2="220" stroke="#334155" stroke-width="1"/>
+  <text x="85" y="213" font-family="system-ui, sans-serif" font-size="12" fill="#f1f5f9">Database System Concepts</text>
+  <text x="230" y="213" font-family="system-ui, sans-serif" font-size="12" fill="#cbd5e1">Silberschatz</text>
+  <text x="360" y="213" font-family="system-ui, sans-serif" font-size="11" fill="#34d399">Available</text>
+  <rect x="450" y="202" width="55" height="20" rx="4" fill="#3b82f6" />
+  <text x="463" y="216" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#ffffff">Issue</text>
+</svg>

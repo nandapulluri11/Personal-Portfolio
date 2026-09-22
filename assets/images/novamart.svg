@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 350" width="100%" height="100%">
+  <defs>
+    <linearGradient id="nmBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+    <linearGradient id="nmPurple" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="100%" stop-color="#8b5cf6" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="350" fill="url(#nmBg)"/>
+  <rect x="40" y="30" width="520" height="290" rx="12" fill="#1e1b4b" stroke="#3730a3" stroke-width="1.5" />
+  <rect x="40" y="30" width="520" height="38" rx="12" fill="#0f172a" />
+  <circle cx="65" cy="49" r="5" fill="#ef4444" />
+  <circle cx="82" cy="49" r="5" fill="#f59e0b" />
+  <circle cx="99" cy="49" r="5" fill="#10b981" />
+  <rect x="125" y="41" width="220" height="16" rx="8" fill="#312e81" />
+  <text x="135" y="53" font-family="monospace" font-size="10" fill="#a5b4fc">https://novamart-shop.dev</text>
+
+  <!-- Banner inside mockup -->
+  <rect x="60" y="85" width="480" height="75" rx="8" fill="#1e1b4b" stroke="#6366f1" stroke-width="1.2" />
+  <text x="85" y="118" font-family="system-ui, sans-serif" font-size="18" font-weight="700" fill="#ffffff">NovaMart E-Commerce</text>
+  <text x="85" y="140" font-family="system-ui, sans-serif" font-size="12" fill="#c7d2fe">Modern Storefront &amp; Cart State Management</text>
+
+  <!-- Product Grid Items -->
+  <rect x="60" y="175" width="145" height="120" rx="8" fill="#0f172a" stroke="#312e81" />
+  <rect x="75" y="190" width="115" height="50" rx="4" fill="#312e81" />
+  <rect x="75" y="250" width="80" height="10" rx="2" fill="#6366f1" />
+  <rect x="75" y="268" width="50" height="12" rx="3" fill="#10b981" />
+
+  <rect x="225" y="175" width="145" height="120" rx="8" fill="#0f172a" stroke="#312e81" />
+  <rect x="240" y="190" width="115" height="50" rx="4" fill="#312e81" />
+  <rect x="240" y="250" width="80" height="10" rx="2" fill="#6366f1" />
+  <rect x="240" y="268" width="50" height="12" rx="3" fill="#10b981" />
+
+  <rect x="390" y="175" width="150" height="120" rx="8" fill="#0f172a" stroke="#312e81" />
+  <rect x="405" y="190" width="120" height="50" rx="4" fill="#312e81" />
+  <rect x="405" y="250" width="80" height="10" rx="2" fill="#6366f1" />
+  <rect x="405" y="268" width="50" height="12" rx="3" fill="#10b981" />
+</svg>

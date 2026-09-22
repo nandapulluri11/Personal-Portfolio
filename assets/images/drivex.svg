@@ -1,0 +1,415 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 820" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2a3a50" />
+      <stop offset="35%" stop-color="#465b75" />
+      <stop offset="65%" stop-color="#9d7862" />
+      <stop offset="85%" stop-color="#cf946d" />
+      <stop offset="100%" stop-color="#e2ab82" />
+    </linearGradient>
+
+    <linearGradient id="mountainDark" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#141a24" />
+      <stop offset="100%" stop-color="#222d3d" />
+    </linearGradient>
+
+    <linearGradient id="mountainMid" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1f2838" />
+      <stop offset="100%" stop-color="#3c383e" />
+    </linearGradient>
+
+    <linearGradient id="roadGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2b2d33" />
+      <stop offset="100%" stop-color="#181a1f" />
+    </linearGradient>
+
+    <linearGradient id="carBodyGrad" x1="0%" y1="0%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#0e1e38" />
+      <stop offset="30%" stop-color="#1d3557" />
+      <stop offset="70%" stop-color="#2a4d7c" />
+      <stop offset="100%" stop-color="#13233f" />
+    </linearGradient>
+
+    <linearGradient id="carGlassGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0a101d" />
+      <stop offset="70%" stop-color="#1b283d" />
+      <stop offset="100%" stop-color="#ffb088" stop-opacity="0.4" />
+    </linearGradient>
+
+    <linearGradient id="blueGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0066ff" />
+      <stop offset="100%" stop-color="#00aaff" />
+    </linearGradient>
+
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.28" />
+    </filter>
+    <filter id="btnShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0066ff" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <!-- ================= TOP NAVBAR ================= -->
+  <rect width="1280" height="68" fill="#ffffff" />
+  <line x1="0" y1="68" x2="1280" y2="68" stroke="#e5e7eb" stroke-width="1" />
+
+  <!-- Logo -->
+  <g transform="translate(60, 16)">
+    <text x="0" y="26" font-family="system-ui, -apple-system, sans-serif" font-size="26" font-weight="900" fill="#0f172a" letter-spacing="-0.5">Drive<tspan fill="#0284c7">X</tspan></text>
+    <text x="0" y="38" font-family="system-ui, -apple-system, sans-serif" font-size="8.5" font-weight="600" fill="#64748b" letter-spacing="0.4">Rent Smarter. Drive Further.</text>
+  </g>
+
+  <!-- Nav links -->
+  <g transform="translate(360, 40)" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600">
+    <text x="0" y="0" fill="#0284c7">Home</text>
+    <line x1="-2" y1="6" x2="38" y2="6" stroke="#0284c7" stroke-width="2.5" stroke-linecap="round" />
+    <text x="65" y="0" fill="#475569">Explore Cars</text>
+    <text x="175" y="0" fill="#475569">How It Works</text>
+    <text x="290" y="0" fill="#475569">For Owners</text>
+    <text x="390" y="0" fill="#475569">About</text>
+  </g>
+
+  <!-- Right Actions -->
+  <g transform="translate(980, 20)">
+    <!-- Search Icon -->
+    <circle cx="16" cy="14" r="6" fill="none" stroke="#475569" stroke-width="2" />
+    <line x1="21" y1="19" x2="27" y2="25" stroke="#475569" stroke-width="2" stroke-linecap="round" />
+
+    <!-- Login Button -->
+    <rect x="52" y="0" width="76" height="34" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2" />
+    <text x="90" y="22" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#334155" text-anchor="middle">Login</text>
+
+    <!-- Sign Up Button -->
+    <rect x="140" y="0" width="88" height="34" rx="6" fill="#0284c7" />
+    <text x="184" y="22" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#ffffff" text-anchor="middle">Sign Up</text>
+  </g>
+
+
+  <!-- ================= HERO LANDSCAPE BACKGROUND ================= -->
+  <g transform="translate(0, 68)">
+    <!-- Sky with sunset glow -->
+    <rect width="1280" height="470" fill="url(#skyGrad)" />
+
+    <!-- Distant Mountains -->
+    <path d="M0 240 L120 180 L260 230 L390 160 L520 220 L680 130 L840 210 L990 140 L1150 200 L1280 160 L1280 470 L0 470 Z" fill="url(#mountainDark)" opacity="0.85" />
+    <path d="M0 290 L180 220 L350 270 L540 190 L750 260 L920 180 L1100 240 L1280 200 L1280 470 L0 470 Z" fill="url(#mountainMid)" opacity="0.9" />
+
+    <!-- Foreground Mountain Ridge -->
+    <path d="M0 350 Q320 310 650 330 T1280 280 L1280 470 L0 470 Z" fill="#181e28" />
+
+    <!-- Asphalt Road with Curve -->
+    <path d="M0 430 Q500 420 1280 400 L1280 470 L0 470 Z" fill="url(#roadGrad)" />
+    <!-- Road Guardrail / shoulder -->
+    <path d="M0 428 Q500 418 1280 398" stroke="#475569" stroke-width="4" stroke-dasharray="8 6" fill="none" opacity="0.6" />
+
+    <!-- Script Callout "More Roads More Stories" -->
+    <g transform="translate(1040, 60) rotate(-7)">
+      <text x="0" y="0" font-family="'Brush Script MT', 'Caveat', cursive, sans-serif" font-size="28" font-weight="bold" fill="#f8fafc" opacity="0.85" letter-spacing="1">More Roads</text>
+      <text x="16" y="26" font-family="'Brush Script MT', 'Caveat', cursive, sans-serif" font-size="28" font-weight="bold" fill="#f8fafc" opacity="0.85" letter-spacing="1">More Stories</text>
+    </g>
+
+    <!-- ================= CAR GRAPHIC (Realistic SUV Rear View) ================= -->
+    <g transform="translate(680, 110)">
+      <!-- Car shadow -->
+      <ellipse cx="260" cy="350" rx="240" ry="24" fill="#000000" opacity="0.6" filter="blur(6px)" />
+
+      <!-- Tires -->
+      <rect x="52" y="270" width="56" height="74" rx="14" fill="#111827" />
+      <rect x="410" y="270" width="56" height="74" rx="14" fill="#111827" />
+
+      <!-- Main Body Chassis -->
+      <path d="M70 290 Q60 220 90 170 Q130 110 200 95 Q260 90 320 95 Q390 110 430 170 Q460 220 450 290 Q430 330 260 335 Q90 330 70 290 Z" fill="url(#carBodyGrad)" stroke="#38547a" stroke-width="1.5" />
+
+      <!-- Rear Windshield Glass -->
+      <path d="M125 165 Q150 115 260 115 Q370 115 395 165 Q370 215 260 215 Q150 215 125 165 Z" fill="url(#carGlassGrad)" stroke="#1e293b" stroke-width="2" />
+      <!-- Roof Spoiler & High Mount Brake Light -->
+      <rect x="180" y="94" width="160" height="14" rx="4" fill="#0f172a" />
+      <line x1="220" y1="101" x2="300" y2="101" stroke="#ef4444" stroke-width="3" stroke-linecap="round" />
+
+      <!-- Modern LED Tail Lights -->
+      <!-- Left light -->
+      <path d="M78 220 L160 215 L155 240 L88 245 Z" fill="#b91c1c" stroke="#ef4444" stroke-width="2" />
+      <line x1="86" y1="224" x2="152" y2="220" stroke="#fca5a5" stroke-width="3" />
+      <!-- Right light -->
+      <path d="M442 220 L360 215 L365 240 L432 245 Z" fill="#b91c1c" stroke="#ef4444" stroke-width="2" />
+      <line x1="434" y1="224" x2="368" y2="220" stroke="#fca5a5" stroke-width="3" />
+
+      <!-- Trunk horizontal light bar connecting lights -->
+      <line x1="160" y1="225" x2="360" y2="225" stroke="#991b1b" stroke-width="3" opacity="0.8" />
+
+      <!-- Rear Bumper & License Plate Area -->
+      <rect x="180" y="260" width="160" height="42" rx="6" fill="#090d16" stroke="#1e293b" stroke-width="1.5" />
+      <!-- Plate -->
+      <rect x="205" y="268" width="110" height="26" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1" />
+      <text x="260" y="286" font-family="system-ui, sans-serif" font-size="14" font-weight="900" fill="#0f172a" text-anchor="middle" letter-spacing="2">Drive<tspan fill="#0284c7">X</tspan></text>
+
+      <!-- Dual Exhaust Pipes -->
+      <rect x="110" y="322" width="28" height="12" rx="4" fill="#475569" stroke="#94a3b8" />
+      <rect x="382" y="322" width="28" height="12" rx="4" fill="#475569" stroke="#94a3b8" />
+    </g>
+
+
+    <!-- ================= HERO TEXT & VALUE PROPS (LEFT SIDE) ================= -->
+    <g transform="translate(68, 45)">
+      <!-- Badge: Peer-to-Peer Car Rental Marketplace -->
+      <rect x="0" y="0" width="250" height="32" rx="16" fill="#0f172a" fill-opacity="0.65" stroke="#334155" stroke-width="1" />
+      <g transform="translate(14, 8)">
+        <!-- Car icon -->
+        <path d="M3 11 L5 5 L13 5 L15 11 Z" fill="none" stroke="#38bdf8" stroke-width="1.6" stroke-linejoin="round" />
+        <circle cx="5" cy="12" r="1.5" fill="#38bdf8" />
+        <circle cx="13" cy="12" r="1.5" fill="#38bdf8" />
+      </g>
+      <text x="38" y="21" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#e2e8f0" letter-spacing="0.2">Peer-to-Peer Car Rental Marketplace</text>
+
+      <!-- Main Headline -->
+      <text x="0" y="82" font-family="system-ui, -apple-system, sans-serif" font-size="52" font-weight="900" fill="#ffffff" letter-spacing="-1">Drive Your</text>
+      <text x="0" y="140" font-family="system-ui, -apple-system, sans-serif" font-size="52" font-weight="900" fill="#38bdf8" letter-spacing="-1">Next Adventure</text>
+
+      <!-- Subtitle -->
+      <text x="0" y="178" font-family="system-ui, sans-serif" font-size="15" font-weight="400" fill="#f1f5f9">Rent cars from trusted local owners. Affordable. Flexible. Reliable.</text>
+      <text x="0" y="200" font-family="system-ui, sans-serif" font-size="15" font-weight="400" fill="#cbd5e1">DriveX makes car rentals simple, safe, and personal.</text>
+
+      <!-- 3 Key Feature Bullets -->
+      <g transform="translate(0, 235)">
+        <!-- 1. Verified Owners -->
+        <g transform="translate(0, 0)">
+          <!-- Shield icon -->
+          <circle cx="12" cy="12" r="14" fill="#0f172a" fill-opacity="0.5" />
+          <path d="M12 4 L6 7 V12 C6 16 12 19 12 19 C12 19 18 16 18 12 V7 Z" fill="none" stroke="#38bdf8" stroke-width="1.8" />
+          <path d="M9 12 L11 14 L15 10" fill="none" stroke="#38bdf8" stroke-width="1.8" stroke-linecap="round" />
+          <text x="34" y="10" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#ffffff">Verified Owners</text>
+          <text x="34" y="26" font-family="system-ui, sans-serif" font-size="11" fill="#94a3b8">Drive with confidence</text>
+        </g>
+
+        <!-- 2. Better Prices -->
+        <g transform="translate(160, 0)">
+          <!-- Tag icon -->
+          <circle cx="12" cy="12" r="14" fill="#0f172a" fill-opacity="0.5" />
+          <path d="M6 13 L11 18 L18 11 L13 6 H6 Z" fill="none" stroke="#38bdf8" stroke-width="1.8" stroke-linejoin="round" />
+          <circle cx="9" cy="9" r="1.5" fill="#38bdf8" />
+          <text x="34" y="10" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#ffffff">Better Prices</text>
+          <text x="34" y="26" font-family="system-ui, sans-serif" font-size="11" fill="#94a3b8">Save more, always</text>
+        </g>
+
+        <!-- 3. Wider Choice -->
+        <g transform="translate(320, 0)">
+          <!-- Users / Cars icon -->
+          <circle cx="12" cy="12" r="14" fill="#0f172a" fill-opacity="0.5" />
+          <circle cx="12" cy="9" r="3" fill="none" stroke="#38bdf8" stroke-width="1.8" />
+          <path d="M6 18 C6 15 9 14 12 14 C15 14 18 15 18 18" fill="none" stroke="#38bdf8" stroke-width="1.8" />
+          <text x="34" y="10" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#ffffff">Wider Choice</text>
+          <text x="34" y="26" font-family="system-ui, sans-serif" font-size="11" fill="#94a3b8">From economy to luxury</text>
+        </g>
+      </g>
+    </g>
+
+
+    <!-- ================= FLOATING SEARCH BOOKING WIDGET ================= -->
+    <g transform="translate(68, 370)">
+      <!-- Outer White Card Container with shadow -->
+      <rect width="1144" height="135" rx="16" fill="#ffffff" filter="url(#cardShadow)" />
+
+      <!-- Tabs Header inside card -->
+      <g transform="translate(20, 12)">
+        <!-- Tab 1: Rent a Car (Active) -->
+        <rect x="0" y="0" width="140" height="34" rx="8" fill="#f0f9ff" />
+        <g transform="translate(18, 10)">
+          <path d="M2 9 L4 4 L12 4 L14 9 Z" fill="none" stroke="#0284c7" stroke-width="1.6" />
+          <circle cx="4" cy="10" r="1.5" fill="#0284c7" />
+          <circle cx="12" cy="10" r="1.5" fill="#0284c7" />
+        </g>
+        <text x="44" y="22" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#0284c7">Rent a Car</text>
+        <line x1="16" y1="34" x2="124" y2="34" stroke="#0284c7" stroke-width="3" stroke-linecap="round" />
+
+        <!-- Tab 2: List Your Car -->
+        <g transform="translate(160, 10)">
+          <path d="M4 11 L8 15 L14 9 L10 5 H4 Z" fill="none" stroke="#64748b" stroke-width="1.5" />
+        </g>
+        <text x="185" y="22" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#64748b">List Your Car</text>
+      </g>
+
+      <!-- Input Fields Row -->
+      <g transform="translate(20, 58)">
+        <!-- 1. Location Input -->
+        <rect x="0" y="0" width="230" height="54" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1" />
+        <g transform="translate(14, 16)">
+          <!-- Pin icon -->
+          <circle cx="6" cy="6" r="3" fill="none" stroke="#0f172a" stroke-width="1.8" />
+          <path d="M6 9 V16" stroke="#0f172a" stroke-width="1.8" stroke-linecap="round" />
+        </g>
+        <text x="42" y="20" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#334155">Location</text>
+        <text x="42" y="38" font-family="system-ui, sans-serif" font-size="13" fill="#64748b">Where are you going?</text>
+        <text x="212" y="32" font-family="system-ui, sans-serif" font-size="13" fill="#94a3b8">×</text>
+
+        <!-- 2. Pick-up Date -->
+        <rect x="242" y="0" width="150" height="54" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1" />
+        <g transform="translate(254, 16)">
+          <rect x="0" y="0" width="14" height="14" rx="2" fill="none" stroke="#475569" stroke-width="1.5" />
+          <line x1="0" y1="4" x2="14" y2="4" stroke="#475569" stroke-width="1.5" />
+        </g>
+        <text x="278" y="20" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#334155">Pick-up Date</text>
+        <text x="278" y="38" font-family="system-ui, sans-serif" font-size="12" fill="#64748b">Select date</text>
+
+        <!-- 3. Pick-up Time -->
+        <rect x="404" y="0" width="140" height="54" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1" />
+        <circle cx="420" cy="27" r="7" fill="none" stroke="#475569" stroke-width="1.5" />
+        <polyline points="420,23 420,27 424,27" fill="none" stroke="#475569" stroke-width="1.5" />
+        <text x="436" y="20" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#334155">Pick-up Time</text>
+        <text x="436" y="38" font-family="system-ui, sans-serif" font-size="12" fill="#64748b">Select time</text>
+
+        <!-- 4. Drop-off Date -->
+        <rect x="556" y="0" width="150" height="54" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1" />
+        <g transform="translate(568, 16)">
+          <rect x="0" y="0" width="14" height="14" rx="2" fill="none" stroke="#475569" stroke-width="1.5" />
+          <line x1="0" y1="4" x2="14" y2="4" stroke="#475569" stroke-width="1.5" />
+        </g>
+        <text x="592" y="20" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#334155">Drop-off Date</text>
+        <text x="592" y="38" font-family="system-ui, sans-serif" font-size="12" fill="#64748b">Select date</text>
+
+        <!-- 5. Drop-off Time -->
+        <rect x="718" y="0" width="140" height="54" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1" />
+        <circle cx="734" cy="27" r="7" fill="none" stroke="#475569" stroke-width="1.5" />
+        <polyline points="734,23 734,27 738,27" fill="none" stroke="#475569" stroke-width="1.5" />
+        <text x="750" y="20" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#334155">Drop-off Time</text>
+        <text x="750" y="38" font-family="system-ui, sans-serif" font-size="12" fill="#64748b">Select time</text>
+
+        <!-- 6. Search Cars Button -->
+        <rect x="870" y="0" width="234" height="54" rx="8" fill="#0284c7" filter="url(#btnShadow)" />
+        <g transform="translate(915, 27)">
+          <circle cx="0" cy="0" r="6" fill="none" stroke="#ffffff" stroke-width="2" />
+          <line x1="5" y1="5" x2="11" y2="11" stroke="#ffffff" stroke-width="2" stroke-linecap="round" />
+        </g>
+        <text x="945" y="33" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="#ffffff">Search Cars</text>
+      </g>
+    </g>
+
+
+    <!-- ================= POPULAR DESTINATIONS ROW ================= -->
+    <g transform="translate(68, 524)">
+      <text x="0" y="16" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#94a3b8">Popular Destinations:</text>
+
+      <!-- Destination Pills -->
+      <!-- 1. Hyderabad -->
+      <g transform="translate(140, -4)">
+        <rect width="112" height="28" rx="14" fill="#0f172a" fill-opacity="0.75" stroke="#334155" stroke-width="1" />
+        <circle cx="14" cy="14" r="8" fill="#38bdf8" fill-opacity="0.3" />
+        <text x="14" y="17" font-size="9" text-anchor="middle">🏛️</text>
+        <text x="32" y="18" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#f1f5f9">Hyderabad</text>
+      </g>
+
+      <!-- 2. Bangalore -->
+      <g transform="translate(262, -4)">
+        <rect width="108" height="28" rx="14" fill="#0f172a" fill-opacity="0.75" stroke="#334155" stroke-width="1" />
+        <circle cx="14" cy="14" r="8" fill="#38bdf8" fill-opacity="0.3" />
+        <text x="14" y="17" font-size="9" text-anchor="middle">🌳</text>
+        <text x="32" y="18" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#f1f5f9">Bangalore</text>
+      </g>
+
+      <!-- 3. Chennai -->
+      <g transform="translate(380, -4)">
+        <rect width="100" height="28" rx="14" fill="#0f172a" fill-opacity="0.75" stroke="#334155" stroke-width="1" />
+        <circle cx="14" cy="14" r="8" fill="#38bdf8" fill-opacity="0.3" />
+        <text x="14" y="17" font-size="9" text-anchor="middle">🏖️</text>
+        <text x="32" y="18" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#f1f5f9">Chennai</text>
+      </g>
+
+      <!-- 4. Mumbai -->
+      <g transform="translate(490, -4)">
+        <rect width="100" height="28" rx="14" fill="#0f172a" fill-opacity="0.75" stroke="#334155" stroke-width="1" />
+        <circle cx="14" cy="14" r="8" fill="#38bdf8" fill-opacity="0.3" />
+        <text x="14" y="17" font-size="9" text-anchor="middle">🌊</text>
+        <text x="32" y="18" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#f1f5f9">Mumbai</text>
+      </g>
+
+      <!-- 5. Delhi -->
+      <g transform="translate(600, -4)">
+        <rect width="90" height="28" rx="14" fill="#0f172a" fill-opacity="0.75" stroke="#334155" stroke-width="1" />
+        <circle cx="14" cy="14" r="8" fill="#38bdf8" fill-opacity="0.3" />
+        <text x="14" y="17" font-size="9" text-anchor="middle">🏰</text>
+        <text x="32" y="18" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#f1f5f9">Delhi</text>
+      </g>
+
+      <!-- Cursive Arrow Callout -->
+      <g transform="translate(1030, -10)">
+        <path d="M0 20 Q20 5 40 8" fill="none" stroke="#f1f5f9" stroke-width="1.8" opacity="0.8" />
+        <polyline points="32,4 40,8 36,16" fill="none" stroke="#f1f5f9" stroke-width="1.8" opacity="0.8" />
+        <text x="48" y="8" font-family="'Brush Script MT', 'Caveat', cursive, sans-serif" font-size="18" fill="#f8fafc" opacity="0.9">Great Journeys</text>
+        <text x="48" y="24" font-family="'Brush Script MT', 'Caveat', cursive, sans-serif" font-size="18" fill="#f8fafc" opacity="0.9">Start Here</text>
+      </g>
+    </g>
+  </g>
+
+
+  <!-- ================= HOW DRIVEX WORKS (LOWER SECTION) ================= -->
+  <g transform="translate(0, 620)">
+    <!-- White background section -->
+    <rect width="1280" height="200" fill="#ffffff" />
+    <line x1="0" y1="0" x2="1280" y2="0" stroke="#f1f5f9" stroke-width="1" />
+
+    <!-- Section Heading -->
+    <g transform="translate(640, 36)" text-anchor="middle">
+      <text x="0" y="0" font-family="system-ui, -apple-system, sans-serif" font-size="24" font-weight="800" fill="#0f172a">How <tspan fill="#0284c7">DriveX</tspan> Works</text>
+      <text x="0" y="20" font-family="system-ui, sans-serif" font-size="12" fill="#64748b">Rent or list a car in just a few simple steps</text>
+    </g>
+
+    <!-- 4 Workflow Steps -->
+    <g transform="translate(140, 75)">
+      <!-- Step 1: Search & Choose -->
+      <g transform="translate(0, 0)">
+        <circle cx="100" cy="20" r="22" fill="#f0f9ff" />
+        <!-- Magnifying glass -->
+        <circle cx="98" cy="18" r="6" fill="none" stroke="#0284c7" stroke-width="2" />
+        <line x1="102" y1="22" x2="108" y2="28" stroke="#0284c7" stroke-width="2" stroke-linecap="round" />
+        <text x="100" y="58" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#0f172a" text-anchor="middle">Search &amp; Choose</text>
+        <text x="100" y="74" font-family="system-ui, sans-serif" font-size="10.5" fill="#64748b" text-anchor="middle">Find the perfect car near you</text>
+        <text x="100" y="87" font-family="system-ui, sans-serif" font-size="10.5" fill="#64748b" text-anchor="middle">from trusted local owners.</text>
+      </g>
+
+      <!-- Step 2: Book Instantly -->
+      <g transform="translate(260, 0)">
+        <circle cx="100" cy="20" r="22" fill="#f0f9ff" />
+        <!-- Calendar icon -->
+        <rect x="91" y="11" width="18" height="18" rx="3" fill="none" stroke="#0284c7" stroke-width="1.8" />
+        <line x1="91" y1="16" x2="109" y2="16" stroke="#0284c7" stroke-width="1.5" />
+        <circle cx="96" cy="21" r="1.2" fill="#0284c7" />
+        <circle cx="104" cy="21" r="1.2" fill="#0284c7" />
+        <text x="100" y="58" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#0f172a" text-anchor="middle">Book Instantly</text>
+        <text x="100" y="74" font-family="system-ui, sans-serif" font-size="10.5" fill="#64748b" text-anchor="middle">Select your dates and confirm</text>
+        <text x="100" y="87" font-family="system-ui, sans-serif" font-size="10.5" fill="#64748b" text-anchor="middle">your booking in minutes.</text>
+      </g>
+
+      <!-- Step 3: Pick Up & Drive -->
+      <g transform="translate(520, 0)">
+        <circle cx="100" cy="20" r="22" fill="#f0f9ff" />
+        <!-- Car icon -->
+        <path d="M92 24 L95 16 L105 16 L108 24 Z" fill="none" stroke="#0284c7" stroke-width="1.8" />
+        <circle cx="95" cy="24" r="1.5" fill="#0284c7" />
+        <circle cx="105" cy="24" r="1.5" fill="#0284c7" />
+        <text x="100" y="58" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#0f172a" text-anchor="middle">Pick Up &amp; Drive</text>
+        <text x="100" y="74" font-family="system-ui, sans-serif" font-size="10.5" fill="#64748b" text-anchor="middle">Meet the owner, verify, and</text>
+        <text x="100" y="87" font-family="system-ui, sans-serif" font-size="10.5" fill="#64748b" text-anchor="middle">hit the road.</text>
+      </g>
+
+      <!-- Step 4: Return & Review -->
+      <g transform="translate(770, 0)">
+        <circle cx="100" cy="20" r="22" fill="#f0f9ff" />
+        <!-- Verified Checkmark Shield -->
+        <path d="M100 10 L92 14 V19 C92 24 100 28 100 28 C100 28 108 24 108 19 V14 Z" fill="none" stroke="#0284c7" stroke-width="1.8" />
+        <path d="M96 19 L99 22 L105 16" fill="none" stroke="#0284c7" stroke-width="1.8" stroke-linecap="round" />
+        <text x="100" y="58" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#0f172a" text-anchor="middle">Return &amp; Review</text>
+        <text x="100" y="74" font-family="system-ui, sans-serif" font-size="10.5" fill="#64748b" text-anchor="middle">Return the car and share</text>
+        <text x="100" y="87" font-family="system-ui, sans-serif" font-size="10.5" fill="#64748b" text-anchor="middle">your experience.</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ================= UNDER DEVELOPMENT CORNER BADGE ================= -->
+  <g transform="translate(1015, 84)">
+    <rect width="235" height="34" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.5" />
+    <circle cx="18" cy="17" r="4" fill="#f59e0b">
+      <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite" />
+    </circle>
+    <text x="32" y="22" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#92400e">UNDER DEVELOPMENT • 75%</text>
+  </g>
+</svg>
